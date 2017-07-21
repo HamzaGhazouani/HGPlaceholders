@@ -1,0 +1,6 @@
+framework module Pods_HGPlaceholders_Tests {
+  umbrella header "Pods-HGPlaceholders_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

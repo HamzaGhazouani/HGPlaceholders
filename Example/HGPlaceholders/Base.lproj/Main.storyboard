@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ahD-ed-B4V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HGPlaceholers-->
+        <scene sceneID="XXL-s5-tq4">
+            <objects>
+                <tableViewController id="oTu-Xb-kSL" customClass="ViewController" customModule="HGPlaceholders_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lmu-xp-sfx" customClass="ProjectNameTableView" customModule="HGPlaceholders_Example" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="IN8-W0-OXZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="LMM-dP-dwI" style="IBUITableViewCellStyleDefault" id="0i0-O1-VsE">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0i0-O1-VsE" id="Ha2-QN-Dek">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LMM-dP-dwI">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="100.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="tableView">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.626" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.2470588235" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="SFMono-Regular"/>
+                                                                <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="showLoadingPlaceholder">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.13700000000000001" green="1" blue="0.51200000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="()">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="dQ9-MY-0VG" style="IBUITableViewCellStyleDefault" id="KnK-d4-2FA">
+                                        <rect key="frame" x="0.0" y="101" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KnK-d4-2FA" id="nFN-Ok-bh1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQ9-MY-0VG">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="100.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="tableView">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.626" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.2470588235" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="SFMono-Regular"/>
+                                                                <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="showNoResultsPlaceholder">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.13700000000000001" green="1" blue="0.51200000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="()">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="5Hi-nD-8Sm" style="IBUITableViewCellStyleDefault" id="lxZ-5t-aPj">
+                                        <rect key="frame" x="0.0" y="202" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lxZ-5t-aPj" id="qdg-J1-qUZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Hi-nD-8Sm">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="100.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="tableView">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.626" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.2470588235" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="SFMono-Regular"/>
+                                                                <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="showErrorPlaceholder">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.13700000000000001" green="1" blue="0.51200000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="()">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="Isg-ZW-qNr" style="IBUITableViewCellStyleDefault" id="flS-00-Eei">
+                                        <rect key="frame" x="0.0" y="303" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="flS-00-Eei" id="rrf-E1-7ME">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Isg-ZW-qNr">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="100.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="tableView">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.626" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.2470588235" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="SFMono-Regular"/>
+                                                                <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="showNoConnectionPlaceholder">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.13700000000000001" green="1" blue="0.51200000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="()">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="9jw-kP-asW" style="IBUITableViewCellStyleDefault" id="yXS-5b-yVu">
+                                        <rect key="frame" x="0.0" y="404" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yXS-5b-yVu" id="L33-D8-PIY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9jw-kP-asW">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="100.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="tableView">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.626" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.2470588235" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="SFMono-Regular"/>
+                                                                <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="showCustomPlaceholder">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.13700000000000001" green="1" blue="0.51200000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="(with: key)">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="Lwz-Mx-STr" style="IBUITableViewCellStyleDefault" id="dDl-Hg-vfo">
+                                        <rect key="frame" x="0.0" y="505" width="375" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dDl-Hg-vfo" id="kXd-dL-Z75">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lwz-Mx-STr">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="100.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="/* From XIB */">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.255" green="0.80100000000000005" blue="0.27000000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content">
+tableView</string>
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.626" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.2470588235" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="SFMono-Regular"/>
+                                                                <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="showCustomPlaceholder">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.13700000000000001" green="1" blue="0.51200000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="(with: key)">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                <integer key="NSLigature" value="0"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                    <tabStops>
+                                                                        <textTab alignment="left" location="27.149999618530273">
+                                                                            <options/>
+                                                                        </textTab>
+                                                                    </tabStops>
+                                                                </paragraphStyle>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="oTu-Xb-kSL" id="FS4-KF-Acc"/>
+                            <outlet property="delegate" destination="oTu-Xb-kSL" id="SI6-nc-hTM"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="HGPlaceholers" id="7aY-So-OeT">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="gAz-tM-rTf">
+                            <connections>
+                                <action selector="showProviders" destination="oTu-Xb-kSL" id="f7V-QR-1Hj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QB-f5-eGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="770"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f2o-Tb-GfU">
+            <objects>
+                <navigationController id="ahD-ed-B4V" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xi9-Mw-OZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oTu-Xb-kSL" kind="relationship" relationship="rootViewController" id="21j-7g-Hw6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ir1-L7-wzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="770"/>
+        </scene>
+    </scenes>
+</document>

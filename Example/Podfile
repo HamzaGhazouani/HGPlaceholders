@@ -1,0 +1,12 @@
+use_frameworks!
+platform :ios, '9.0'
+
+target 'HGPlaceholders_Example' do
+  pod 'HGPlaceholders', :path => '../'
+
+  target 'HGPlaceholders_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

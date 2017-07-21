@@ -1,0 +1,6 @@
+framework module HGPlaceholders {
+  umbrella header "HGPlaceholders-umbrella.h"
+
+  export *
+  module * { export * }
+}

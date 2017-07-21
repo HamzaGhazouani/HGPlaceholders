@@ -1,0 +1,16 @@
+PODS:
+  - HGPlaceholders (0.1.0)
+
+DEPENDENCIES:
+  - HGPlaceholders (from `../`)
+
+EXTERNAL SOURCES:
+  HGPlaceholders:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HGPlaceholders: 429657f810013cef549a2b3ea2964d897dbf1342
+
+PODFILE CHECKSUM: 1959d4ad270c1212a48c21e8def5087961eb0a30
+
+COCOAPODS: 1.2.1
