@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HGPlaceholders'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Shows placeholders easily in your table views'
 
 # This description is used to generate tags and improve search results.
