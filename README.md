@@ -93,9 +93,9 @@ Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/HGPl
 You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
 
 ## Roadmap
-- [x] UICollectionView compatible
-- [x] Carthage support
-- [x] Tests
+- [] UICollectionView compatibility
+- [] Carthage support
+- [] Tests
 
 ## Author
 
