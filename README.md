@@ -14,7 +14,8 @@
 
 ## Example
 
-![](/Screenshots/default.gif) ![](/Screenshots/basic.gif) ![](/Screenshots/custom.gif)
+![](/Screenshots/default.gif) ![](/Screenshots/custom.gif)
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
