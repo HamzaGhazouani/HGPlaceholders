@@ -8,7 +8,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/HGPlaceholders.svg?style=flat)](http://cocoapods.org/pods/HGPlaceholders)
 <br />
 
-[![codebeat badge](https://codebeat.co/badges/c4db03f5-903a-4b0e-84bb-98362fc5bd7a)](https://codebeat.co/projects/github-com-hamzaghazouani-hgplaceholders)
+[![codebeat badge](https://codebeat.co/badges/c706606b-c02a-4000-af85-6cebf23c5538)](https://codebeat.co/projects/github-com-hamzaghazouani-hgplaceholders-master)
 [![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/HGCircularSlider.svg)](http://cocoadocs.org/docsets/HGCircularSlider/)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/hamzaghazouani/hgplaceholders/)](http://clayallsopp.github.io/readme-score?url=https://github.com/hamzaghazouani/hgplaceholders)
 
@@ -43,10 +43,10 @@ Written with vanilla Swift flavor 🐤
 1. Inherit your UITableView class from TableView
 2. Call the placeholder to show
 
-`tableView.showLoadingPlaceholder()`
-`tableView.showNoResultsPlaceholder()`
-`tableView.showErrorPlaceholder()`
-`tableView.showNoConnectionPlaceholder()`
+* `tableView.showLoadingPlaceholder()`
+* `tableView.showNoResultsPlaceholder()`
+* `tableView.showErrorPlaceholder()`
+* `tableView.showNoConnectionPlaceholder()`
 
 
 ## Customization 
