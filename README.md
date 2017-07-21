@@ -32,13 +32,6 @@ it, simply add the following line to your Podfile:
 pod "HGPlaceholders"
 ```
 
-Features ✨
-
-Flexible and high-customizible placeholders
-Automatically swift 
-Support @IBInspectable & @IBDesignable
-Written with vanilla Swift flavor 🐤
-
 ## Usage
 
 1. Inherit your UITableView class from TableView
