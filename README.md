@@ -9,7 +9,7 @@
 <br />
 
 [![codebeat badge](https://codebeat.co/badges/c706606b-c02a-4000-af85-6cebf23c5538)](https://codebeat.co/projects/github-com-hamzaghazouani-hgplaceholders-master)
-[![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/HGCircularSlider.svg)](http://cocoadocs.org/docsets/HGCircularSlider/)
+[![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/HGPlaceholders.svg)](http://cocoadocs.org/docsets/HGPlaceholders/)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/hamzaghazouani/hgplaceholders/)](http://clayallsopp.github.io/readme-score?url=https://github.com/hamzaghazouani/hgplaceholders)
 
 ## Example
@@ -63,11 +63,23 @@ If you want to change only images, just set them in your asset with this names (
 
 The framework contains different defaults placeholders:
 
-* Basic    : `tableView.placeholdersProvider = .basic`
-* Default  : `tableView.placeholdersProvider = .default`
-* Default2 : `tableView.placeholdersProvider = .default2`
-* Hallowen : `tableView.placeholdersProvider = .halloween // for fun :)` 
+* Basic    : 
 
+`tableView.placeholdersProvider = .basic`
+
+* Default  : 
+
+`tableView.placeholdersProvider = .default`
+
+
+* Default2 : 
+
+`tableView.placeholdersProvider = .default2`
+
+
+* Hallowen : 
+
+`tableView.placeholdersProvider = .halloween // for fun :)` 
 
 If you want to change the default palceholders for all table views in your project: 
 
@@ -84,7 +96,7 @@ You can also add new placeholders fully customizable, you should keep en mind th
 
 
 ## Documentation
-Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/HGCircularSlider/).<br/>
+Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/HGPlaceholders/).<br/>
 You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
 
 ## Roadmap
