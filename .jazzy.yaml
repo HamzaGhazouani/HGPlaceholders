@@ -1,1 +1,1 @@
-jazzy --podspec HGPlaceholders.podspec
+podspec: HGPlaceholders.podspec
