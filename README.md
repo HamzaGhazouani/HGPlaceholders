@@ -93,13 +93,17 @@ Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/HGPl
 You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
 
 ## Roadmap
-- [] UICollectionView compatibility
-- [] Carthage support
-- [] Tests
+- [ ] UICollectionView compatibility
+- [ ] Carthage support
+- [ ] Tests
+
+## You also may like
+
+* **[HGCircularSlider](https://github.com/HamzaGhazouani/HGCircularSlider)** - A custom reusable circular slider control for iOS application.
 
 ## Author
 
-HamzaGhazouani, hamza.ghazouani@gmail.com
+Hamza Ghazouani, hamza.ghazouani@gmail.com
 
 ## License
 
