@@ -33,6 +33,13 @@ it, simply add the following line to your Podfile:
 pod "HGPlaceholders"
 ```
 
+HGCircularSlider is also available through [Carthage](https://github.com/Carthage/Carthage). To install
+it, simply add the following line to your Cartfile:
+
+``` ruby
+github "HamzaGhazouani/HGPlaceholders"
+```
+
 ## Usage
 
 1. Inherit your UITableView class from TableView
