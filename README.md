@@ -1,13 +1,14 @@
 # HGPlaceholders
 
-[![Twitter: @GhazouaniHamza](https://img.shields.io/badge/contact-@GhazouaniHamza-blue.svg?style=flat)](https://twitter.com/GhazouaniHamza)
 [![CI Status](http://img.shields.io/travis/HamzaGhazouani/HGPlaceholders.svg?style=flat)](https://travis-ci.org/HamzaGhazouani/HGPlaceholders)
 [![Version](https://img.shields.io/cocoapods/v/HGPlaceholders.svg?style=flat)](http://cocoapods.org/pods/HGPlaceholders)
 [![License](https://img.shields.io/cocoapods/l/HGPlaceholders.svg?style=flat)](http://cocoapods.org/pods/HGPlaceholders)
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)]()
+[![Supports](https://img.shields.io/badge/supports-CocoaPods%20%7C%20Carthage-green.svg?style=flat)]()
 [![Platform](https://img.shields.io/cocoapods/p/HGPlaceholders.svg?style=flat)](http://cocoapods.org/pods/HGPlaceholders)
 <br />
 
+[![Twitter: @GhazouaniHamza](https://img.shields.io/badge/contact-@GhazouaniHamza-blue.svg?style=flat)](https://twitter.com/GhazouaniHamza)
 [![codebeat badge](https://codebeat.co/badges/c706606b-c02a-4000-af85-6cebf23c5538)](https://codebeat.co/projects/github-com-hamzaghazouani-hgplaceholders-master)
 [![Documentation](https://img.shields.io/cocoapods/metrics/doc-percent/HGPlaceholders.svg)](http://cocoadocs.org/docsets/HGPlaceholders/)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/hamzaghazouani/hgplaceholders/)](http://clayallsopp.github.io/readme-score?url=https://github.com/hamzaghazouani/hgplaceholders)
