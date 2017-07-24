@@ -102,7 +102,7 @@ You can also install documentation locally using [jazzy](https://github.com/real
 
 ## Roadmap
 - [ ] UICollectionView compatibility
-- [ ] Carthage support
+- [x] Carthage support
 - [ ] Tests
 
 ## You also may like
