@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
         
         // cell for custom placeholder
         let nib = UINib(nibName: "ExampleTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "Cell")
+        tableView.register(nib, forCellReuseIdentifier: "CustomPlaceholderCell")
                 
         placeholderTableView = tableView as? TableView
         placeholderTableView?.placeholderDelegate = self
@@ -103,10 +103,11 @@ class ViewController: UITableViewController {
 
 extension ViewController: PlaceholderDelegate {
     
-    func tableView(_ tableView: TableView, actionButtonTappedFor placeholder: Placeholder) {
+    func view(_ view: Any, actionButtonTappedFor placeholder: Placeholder) {
         print(placeholder.key.value)
         placeholderTableView?.showDefault()
     }
+
 }
 
 class ProjectNameTableView: TableView {

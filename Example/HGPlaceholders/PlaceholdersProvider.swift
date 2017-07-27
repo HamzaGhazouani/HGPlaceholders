@@ -39,7 +39,7 @@ extension PlaceholdersProvider {
         
         let placeholdersProvider = PlaceholdersProvider(loading: loading, error: error, noResults: noResults, noConnection: noConnection)
         
-        let xibPlaceholder = Placeholder(cellIdentifier: "Cell", key: PlaceholderKey.custom(key: "XIB"))
+        let xibPlaceholder = Placeholder(cellIdentifier: "CustomPlaceholderCell", key: PlaceholderKey.custom(key: "XIB"))
         
         placeholdersProvider.add(placeholders: PlaceholdersProvider.starWarsPlaceholder, xibPlaceholder)
         

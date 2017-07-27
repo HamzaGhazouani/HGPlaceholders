@@ -18,7 +18,7 @@ public struct Placeholder {
     public var style: PlaceholderStyle?
     
     /// The cell identifier of the placeholder
-    public let cellIdentifier: String
+    public let cellIdentifier: String?
     
     /// The key of the placeholder, each placeholder should have an unique key
     public let key: PlaceholderKey
@@ -31,7 +31,7 @@ public struct Placeholder {
     ///   - data: the data of the placeholder s
     ///   - style: the style of the placeholder
     ///   - key: the unique key of the placeholder
-    public init(cellIdentifier: String = TableView.PlaceholderTableViewCellIdentifier, data: PlaceholderData? = nil, style: PlaceholderStyle? = nil, key: PlaceholderKey) {
+    public init(cellIdentifier: String? = nil, data: PlaceholderData? = nil, style: PlaceholderStyle? = nil, key: PlaceholderKey) {
         self.key = key
         self.cellIdentifier = cellIdentifier
         self.style = style

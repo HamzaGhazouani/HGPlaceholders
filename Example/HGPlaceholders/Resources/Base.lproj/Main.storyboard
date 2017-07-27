@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ahD-ed-B4V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Inn-UG-Y2D">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HGPlaceholers-->
+        <!--HGPlaceholders-->
         <scene sceneID="XXL-s5-tq4">
             <objects>
                 <tableViewController id="oTu-Xb-kSL" customClass="ViewController" customModule="HGPlaceholders_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -120,9 +121,8 @@
                                                         </fragment>
                                                         <fragment content=".">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.2470588235" green="0.43137254899999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="NSColor" red="0.24706" green="0.43136999999999998" blue="0.45490000000000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <font key="NSFont" size="13" name="SFMono-Regular"/>
-                                                                <font key="NSOriginalFont" size="13" name="SFMono-Regular"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                                     <tabStops>
                                                                         <textTab alignment="left" location="27.149999618530273">
@@ -132,23 +132,9 @@
                                                                 </paragraphStyle>
                                                             </attributes>
                                                         </fragment>
-                                                        <fragment content="showNoResultsPlaceholder">
+                                                        <fragment content="showNoResultsPlaceholder()">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.13700000000000001" green="1" blue="0.51200000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                <font key="NSFont" size="11" name="Menlo-Regular"/>
-                                                                <integer key="NSLigature" value="0"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                    <tabStops>
-                                                                        <textTab alignment="left" location="27.149999618530273">
-                                                                            <options/>
-                                                                        </textTab>
-                                                                    </tabStops>
-                                                                </paragraphStyle>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="()">
-                                                            <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <color key="NSColor" red="0.13725490196078433" green="1" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <font key="NSFont" size="11" name="Menlo-Regular"/>
                                                                 <integer key="NSLigature" value="0"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -488,7 +474,7 @@ tableView</string>
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="HGPlaceholers" id="7aY-So-OeT">
+                    <navigationItem key="navigationItem" title="HGPlaceholders" id="7aY-So-OeT">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="gAz-tM-rTf">
                             <connections>
                                 <action selector="showProviders" destination="oTu-Xb-kSL" id="f7V-QR-1Hj"/>
@@ -499,23 +485,139 @@ tableView</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7QB-f5-eGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="770"/>
+            <point key="canvasLocation" x="-1844" y="695"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--HGPlaceholders-->
+        <scene sceneID="Hyg-HC-n4g">
+            <objects>
+                <collectionViewController id="cWY-e2-k1d" customClass="CollectionViewController" customModule="HGPlaceholders_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="uLL-L9-RM0" customClass="CollectionView" customModule="HGPlaceholders">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.5" minimumInteritemSpacing="0.0" id="Ksa-kn-WCf">
+                            <size key="itemSize" width="150" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="oOi-uK-c7T" customClass="BasicCollectionViewCell" customModule="HGPlaceholders_Example" customModuleProvider="target">
+                                <rect key="frame" x="225" y="0.0" width="150" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hra-aZ-nFJ">
+                                            <rect key="frame" x="8" y="93.5" width="134" height="13"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                                            <color key="textColor" red="0.13725490200000001" green="1" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12549019610000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hra-aZ-nFJ" firstAttribute="leading" secondItem="oOi-uK-c7T" secondAttribute="leadingMargin" id="7Mh-iV-HA6"/>
+                                    <constraint firstItem="hra-aZ-nFJ" firstAttribute="centerY" secondItem="oOi-uK-c7T" secondAttribute="centerY" id="Yfw-c0-m1B"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="hra-aZ-nFJ" secondAttribute="trailing" id="ibV-FH-1jZ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="hra-aZ-nFJ" id="uMW-yY-AQL"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomPlaceholderCell" id="U2D-XM-gGF" userLabel="XibCell" customClass="PlaceholderCollectionViewCell" customModule="HGPlaceholders">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCr-DO-64x">
+                                            <rect key="frame" x="51" y="85" width="48" height="30"/>
+                                            <state key="normal" title="Action!">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="sendPlaceholderAction:" destination="U2D-XM-gGF" eventType="touchUpInside" id="bTb-Mc-Ar7"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.63137254899999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YCr-DO-64x" firstAttribute="centerY" secondItem="U2D-XM-gGF" secondAttribute="centerY" id="2Fv-Lb-rcr"/>
+                                    <constraint firstItem="YCr-DO-64x" firstAttribute="centerX" secondItem="U2D-XM-gGF" secondAttribute="centerX" id="2Te-Bz-tNf"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="cWY-e2-k1d" id="kHO-W1-GM9"/>
+                            <outlet property="delegate" destination="cWY-e2-k1d" id="c69-oS-4Nj"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="HGPlaceholders" id="c0v-sa-EUQ"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fW-hH-MnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="695"/>
+        </scene>
+        <!--TableView-->
+        <scene sceneID="2XD-6K-2gU">
+            <objects>
+                <navigationController id="NkB-36-gyv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TableView" image="list" id="8us-pn-xtR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0RU-hv-rvj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oTu-Xb-kSL" kind="relationship" relationship="rootViewController" id="0zz-Lj-WST"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqc-9N-G4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1082" y="695"/>
+        </scene>
+        <!--CollectionView-->
         <scene sceneID="f2o-Tb-GfU">
             <objects>
                 <navigationController id="ahD-ed-B4V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CollectionView" image="collection" id="mS4-MD-C7e"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xi9-Mw-OZJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="oTu-Xb-kSL" kind="relationship" relationship="rootViewController" id="21j-7g-Hw6"/>
+                        <segue destination="cWY-e2-k1d" kind="relationship" relationship="rootViewController" id="zHE-aK-Jzb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir1-L7-wzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-382" y="770"/>
+            <point key="canvasLocation" x="-324" y="695"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iwQ-Ie-PH6">
+            <objects>
+                <tabBarController id="Inn-UG-Y2D" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OqH-xn-bfX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ahD-ed-B4V" kind="relationship" relationship="viewControllers" id="1Pi-fY-LQN"/>
+                        <segue destination="NkB-36-gyv" kind="relationship" relationship="viewControllers" id="Mo1-Bo-T4H"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDy-XV-7PQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711" y="-249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="collection" width="29" height="29"/>
+        <image name="list" width="29" height="29"/>
+    </resources>
 </document>

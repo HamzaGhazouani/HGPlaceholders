@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
 s.name             = 'HGPlaceholders'
-s.version          = '0.1.2'
-s.summary          = 'Nice library to show placeholders for any UITableView in your project'
+s.version          = '0.2.0'
+s.summary          = 'Nice library to show placeholders for any UITableView/UICollectionView in your project'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ s.summary          = 'Nice library to show placeholders for any UITableView in y
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
 s.description      = <<-DESC
-A powerful framework allows you to show easily different placeholders (no resulats, loading, error occured, ...) in your table view, fully customisable
+A powerful framework allows you to show easily different placeholders (no resulats, loading, error occured, ...) in your table view / collection view, fully customisable
 DESC
 
 s.homepage         = 'https://github.com/HamzaGhazouani/HGPlaceholders'

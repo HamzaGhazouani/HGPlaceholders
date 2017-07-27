@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlaceholderCollectionViewCell" id="gTV-IL-0wX" customClass="PlaceholderCollectionViewCell" customModule="HGPlaceholders" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hZZ-J9-EAn">
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="191"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="800" placeholderIntrinsicWidth="0.0" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="c7U-EM-TGb">
+                                <rect key="frame" x="152" y="0.0" width="0.0" height="0.0"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xfo-v7-Wj1">
+                                <rect key="frame" x="0.0" y="30" width="304" height="113"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="754" verticalCompressionResistancePriority="802" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIN-cg-xzD">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="103"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="801" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B15-GK-QdK">
+                                        <rect key="frame" x="0.0" y="113" width="304" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="999" verticalCompressionResistancePriority="999" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-2S-oJM">
+                                <rect key="frame" x="142" y="173" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <variation key="heightClass=compact-widthClass=compact" spacing="15"/>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CmY-F1-ttN">
+                        <rect key="frame" x="0.0" y="300" width="96" height="74"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sn-za-oDj">
+                                <rect key="frame" x="0.0" y="0.0" width="96" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="44" id="jgb-0c-2h7">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendPlaceholderAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="gn1-xf-Tuq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQy-Ae-ot4">
+                                <rect key="frame" x="0.0" y="74" width="96" height="0.0"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="BsJ-jp-UdJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.63137254899999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="hZZ-J9-EAn" secondAttribute="trailing" id="2zY-in-uvF"/>
+                <constraint firstItem="CmY-F1-ttN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hZZ-J9-EAn" secondAttribute="bottom" constant="10" id="4ZI-Lh-kWM"/>
+                <constraint firstAttribute="bottomMargin" secondItem="CmY-F1-ttN" secondAttribute="bottom" id="DWo-fe-kj2"/>
+                <constraint firstItem="hZZ-J9-EAn" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Qx7-EG-NrM"/>
+                <constraint firstAttribute="centerX" secondItem="CmY-F1-ttN" secondAttribute="centerX" id="llj-2N-4Se"/>
+                <constraint firstItem="hZZ-J9-EAn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="q43-6p-R9W"/>
+                <constraint firstItem="hZZ-J9-EAn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="rHc-RN-p1V"/>
+            </constraints>
+            <size key="customSize" width="156" height="122"/>
+            <connections>
+                <outlet property="actionButton" destination="2sn-za-oDj" id="kQW-q1-oK2"/>
+                <outlet property="activityIndicator" destination="JMg-2S-oJM" id="xcA-Qs-V89"/>
+                <outlet property="placeholderImageView" destination="c7U-EM-TGb" id="BTM-z4-sxN"/>
+                <outlet property="subtitleLabel" destination="B15-GK-QdK" id="qCM-Yc-nav"/>
+                <outlet property="titleLabel" destination="cIN-cg-xzD" id="fBh-V1-fkO"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="113"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -21,7 +21,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 - iOS 9.0+
-- Xcode 8.0
+- Xcode 8.3
 
 ## Installation
 
@@ -42,13 +42,13 @@ github "HamzaGhazouani/HGPlaceholders"
 
 ## Usage
 
-1. Inherit your UITableView class from TableView
+1. Inherit your UITableView class from TableView Or inherit UICollectionView from CollectionView
 2. Call the placeholder to show
 
-* `tableView.showLoadingPlaceholder()`
-* `tableView.showNoResultsPlaceholder()`
-* `tableView.showErrorPlaceholder()`
-* `tableView.showNoConnectionPlaceholder()`
+* `tableView.showLoadingPlaceholder()` or `collectionView.showLoadingPlaceholder()`
+* `tableView.showNoResultsPlaceholder()` or `collectionView.showNoResultsPlaceholder()`
+* `tableView.showErrorPlaceholder()` or `collectionView.showErrorPlaceholder()`
+* `tableView.showNoConnectionPlaceholder()` or `collectionView.showNoConnectionPlaceholder()`
 
 
 ## Customization 
@@ -66,26 +66,34 @@ The framework contains different defaults placeholders:
 
 * Basic    : 
 
-`tableView.placeholdersProvider = .basic`
+`tableView.placeholdersProvider = .basic` or `collectionView.placeholdersProvider = .basic`
 
 * Default  : 
 
-`tableView.placeholdersProvider = .default`
-
+`tableView.placeholdersProvider = .default` or `collectionView.placeholdersProvider = .default` 
 
 * Default2 : 
 
-`tableView.placeholdersProvider = .default2`
+`tableView.placeholdersProvider = .default2` or `collectionView.placeholdersProvider = .default2` 
 
 
 * Hallowen : 
 
-`tableView.placeholdersProvider = .halloween // for fun :)` 
+`tableView.placeholdersProvider = .halloween` or `collectionView.placeholdersProvider = .halloween` // for fun :)` 
 
 If you want to change the default palceholders for all table views in your project: 
 
 ```
 class ProjectNameTableView: TableView {
+
+    override func customSetup() {
+        placeholdersProvider = .basic
+    }
+}
+```
+
+```
+class ProjectNameCollectionView: CollectionView {
 
     override func customSetup() {
         placeholdersProvider = .basic
@@ -101,7 +109,7 @@ Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/HGPl
 You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
 
 ## Roadmap
-- [ ] UICollectionView compatibility
+- [x] UICollectionView compatibility
 - [x] Carthage support
 - [ ] Tests
 

@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		36CD84453BA28A63C2D1E5F2 /* Pods_HGPlaceholders_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2F2F33413967C3AB72E3D8 /* Pods_HGPlaceholders_Example.framework */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7A3ACBE91F20F7A60010CF7F /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3ACBE71F20F7A60010CF7F /* ExampleTableViewCell.swift */; };
-		7A3ACBEA1F20F7A60010CF7F /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A3ACBE81F20F7A60010CF7F /* ExampleTableViewCell.xib */; };
-		7A3ACBEC1F20F82F0010CF7F /* PlaceholdersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3ACBEB1F20F82F0010CF7F /* PlaceholdersProvider.swift */; };
+		7ADA68581F28F0A800D1C6E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68491F28F0A800D1C6E5 /* AppDelegate.swift */; };
+		7ADA68591F28F0A800D1C6E5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA684B1F28F0A800D1C6E5 /* CollectionViewController.swift */; };
+		7ADA685A1F28F0A800D1C6E5 /* PlaceholdersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA684C1F28F0A800D1C6E5 /* PlaceholdersProvider.swift */; };
+		7ADA685B1F28F0A800D1C6E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA684E1F28F0A800D1C6E5 /* LaunchScreen.xib */; };
+		7ADA685C1F28F0A800D1C6E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA68501F28F0A800D1C6E5 /* Main.storyboard */; };
+		7ADA685D1F28F0A800D1C6E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA68521F28F0A800D1C6E5 /* Images.xcassets */; };
+		7ADA685F1F28F0A800D1C6E5 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68551F28F0A800D1C6E5 /* ExampleTableViewCell.swift */; };
+		7ADA68601F28F0A800D1C6E5 /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA68561F28F0A800D1C6E5 /* ExampleTableViewCell.xib */; };
+		7ADA68611F28F0A800D1C6E5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68571F28F0A800D1C6E5 /* TableViewController.swift */; };
+		7ADA68781F29DB8800D1C6E5 /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68771F29DB8800D1C6E5 /* BasicCollectionViewCell.swift */; };
 		84F22AA1D43642BE4EDD06C3 /* Pods_HGPlaceholders_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689E591B770DF34951C60BD7 /* Pods_HGPlaceholders_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,20 +38,22 @@
 		0913B562CE0DD4319C2FEC31 /* HGPlaceholders.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HGPlaceholders.podspec; path = ../HGPlaceholders.podspec; sourceTree = "<group>"; };
 		576F9853BBED6C018D85C27A /* Pods-HGPlaceholders_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGPlaceholders_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGPlaceholders_Example/Pods-HGPlaceholders_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HGPlaceholders_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGPlaceholders_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* HGPlaceholders_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGPlaceholders_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		665F8E8E336FB2C3FF9CC5BB /* Pods-HGPlaceholders_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGPlaceholders_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGPlaceholders_Example/Pods-HGPlaceholders_Example.release.xcconfig"; sourceTree = "<group>"; };
 		689E591B770DF34951C60BD7 /* Pods_HGPlaceholders_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGPlaceholders_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A3ACBE71F20F7A60010CF7F /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
-		7A3ACBE81F20F7A60010CF7F /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
-		7A3ACBEB1F20F82F0010CF7F /* PlaceholdersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholdersProvider.swift; sourceTree = "<group>"; };
+		7ADA68491F28F0A800D1C6E5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ADA684B1F28F0A800D1C6E5 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7ADA684C1F28F0A800D1C6E5 /* PlaceholdersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholdersProvider.swift; sourceTree = "<group>"; };
+		7ADA684F1F28F0A800D1C6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7ADA68511F28F0A800D1C6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7ADA68521F28F0A800D1C6E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7ADA68531F28F0A800D1C6E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		7ADA68551F28F0A800D1C6E5 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		7ADA68561F28F0A800D1C6E5 /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
+		7ADA68571F28F0A800D1C6E5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7ADA68771F29DB8800D1C6E5 /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewCell.swift; sourceTree = "<group>"; };
 		980B22E971009A9561037888 /* Pods-HGPlaceholders_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGPlaceholders_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGPlaceholders_Tests/Pods-HGPlaceholders_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A774175CBC10EE8D6340ED5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CA2F2F33413967C3AB72E3D8 /* Pods_HGPlaceholders_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGPlaceholders_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,14 +103,11 @@
 		607FACD21AFB9204008FA782 /* Example for HGPlaceholders */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				7A3ACBEB1F20F82F0010CF7F /* PlaceholdersProvider.swift */,
-				7A3ACBE71F20F7A60010CF7F /* ExampleTableViewCell.swift */,
-				7A3ACBE81F20F7A60010CF7F /* ExampleTableViewCell.xib */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				7ADA68481F28F0A800D1C6E5 /* AppDelegate */,
+				7ADA684C1F28F0A800D1C6E5 /* PlaceholdersProvider.swift */,
+				7ADA684A1F28F0A800D1C6E5 /* CollectionViewExample */,
+				7ADA68541F28F0A800D1C6E5 /* TableViewExample */,
+				7ADA684D1F28F0A800D1C6E5 /* Resources */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for HGPlaceholders";
@@ -116,7 +117,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
+				7ADA68531F28F0A800D1C6E5 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,6 +147,43 @@
 				9A774175CBC10EE8D6340ED5 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7ADA68481F28F0A800D1C6E5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7ADA68491F28F0A800D1C6E5 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7ADA684A1F28F0A800D1C6E5 /* CollectionViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				7ADA684B1F28F0A800D1C6E5 /* CollectionViewController.swift */,
+				7ADA68771F29DB8800D1C6E5 /* BasicCollectionViewCell.swift */,
+			);
+			path = CollectionViewExample;
+			sourceTree = "<group>";
+		};
+		7ADA684D1F28F0A800D1C6E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7ADA684E1F28F0A800D1C6E5 /* LaunchScreen.xib */,
+				7ADA68501F28F0A800D1C6E5 /* Main.storyboard */,
+				7ADA68521F28F0A800D1C6E5 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7ADA68541F28F0A800D1C6E5 /* TableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				7ADA68551F28F0A800D1C6E5 /* ExampleTableViewCell.swift */,
+				7ADA68561F28F0A800D1C6E5 /* ExampleTableViewCell.xib */,
+				7ADA68571F28F0A800D1C6E5 /* TableViewController.swift */,
+			);
+			path = TableViewExample;
 			sourceTree = "<group>";
 		};
 		7EE3BFF259D2771DEE11BE48 /* Pods */ = {
@@ -259,10 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A3ACBEA1F20F7A60010CF7F /* ExampleTableViewCell.xib in Resources */,
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				7ADA685B1F28F0A800D1C6E5 /* LaunchScreen.xib in Resources */,
+				7ADA685D1F28F0A800D1C6E5 /* Images.xcassets in Resources */,
+				7ADA68601F28F0A800D1C6E5 /* ExampleTableViewCell.xib in Resources */,
+				7ADA685C1F28F0A800D1C6E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +411,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				7A3ACBEC1F20F82F0010CF7F /* PlaceholdersProvider.swift in Sources */,
-				7A3ACBE91F20F7A60010CF7F /* ExampleTableViewCell.swift in Sources */,
+				7ADA68581F28F0A800D1C6E5 /* AppDelegate.swift in Sources */,
+				7ADA68781F29DB8800D1C6E5 /* BasicCollectionViewCell.swift in Sources */,
+				7ADA68611F28F0A800D1C6E5 /* TableViewController.swift in Sources */,
+				7ADA68591F28F0A800D1C6E5 /* CollectionViewController.swift in Sources */,
+				7ADA685A1F28F0A800D1C6E5 /* PlaceholdersProvider.swift in Sources */,
+				7ADA685F1F28F0A800D1C6E5 /* ExampleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,20 +439,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		7ADA684E1F28F0A800D1C6E5 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				7ADA684F1F28F0A800D1C6E5 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7ADA68501F28F0A800D1C6E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ADA68511F28F0A800D1C6E5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -511,7 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FP33JJN6C2;
-				INFOPLIST_FILE = HGPlaceholders/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HGPlaceholders/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -526,7 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FP33JJN6C2;
-				INFOPLIST_FILE = HGPlaceholders/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HGPlaceholders/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

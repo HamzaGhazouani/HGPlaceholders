@@ -9,24 +9,24 @@
 import UIKit
 
 
-/// The delegate of a TableView object must adopt the PlaceholderDelegate protocol. the method of the protocol allow the delegate to perform placeholders action.
+/// The delegate of a TableView/CollectionView object must adopt the PlaceholderDelegate protocol. the method of the protocol allow the delegate to perform placeholders action.
 public protocol PlaceholderDelegate: class {
     
-    /// Performs the action to the delegate of the table view
+    /// Performs the action to the delegate of the table or collection view
     ///
     /// - Parameters:
-    ///   - tableView: the table view
-    ///   - placeholder: the current placeholder
-    func tableView(_ tableView: TableView, actionButtonTappedFor placeholder: Placeholder)
+    ///   - view: the table view or the collection
+    ///   - placeholder: The placeholder source of the action
+    func view(_ view: Any, actionButtonTappedFor placeholder: Placeholder)
 }
 
 ///  A table view  that allows to show easily placeholders like no results, no internet connection, etc
 open class TableView: UITableView {
-
-    // MARK: - Public properties 
     
-    /// The placeholdersProvider property is responsible for the placeholders views and data 
-    public var placeholdersProvider = PlaceholdersProvider.default {
+    // MARK: - Public properties
+    
+    /// The placeholdersProvider property is responsible for the placeholders views and data
+    final public var placeholdersProvider = PlaceholdersProvider.default {
         willSet {
             /// before changing the placeholders data, we should be sure that the tableview is in the default configuration. Otherwise If the dataSource and the delegate are in placeholder configuration, and we set the new data, the old one will be released and we will lose the defaultDataSource and defaultDelegate (they will be set to nil)
             showDefault()
@@ -64,7 +64,7 @@ open class TableView: UITableView {
     }
     
     // MARK: - Private properties
-
+    
     /// The defaultDataSource is used to allow to go back to the initial data source of the table view after switching to a placeholder data source
     fileprivate weak var defaultDataSource: UITableViewDataSource?
     
@@ -72,7 +72,7 @@ open class TableView: UITableView {
     fileprivate weak var defaultDelegate: UITableViewDelegate?
     
     /// The defaultSeparatorStyle is used to save the tableview separator style, because, when you switch to a placeholder, is changed to `.none`
-    fileprivate var defaultSeparatorStyle: UITableViewCellSeparatorStyle!
+    internal var defaultSeparatorStyle: UITableViewCellSeparatorStyle!
     
     /// The defaultAlwaysBounceVertical is used to save the tableview bouncing setup, because, when you switch to a placeholder, the vertical bounce is disabled
     fileprivate var defaultAlwaysBounceVertical: Bool!
@@ -111,11 +111,8 @@ open class TableView: UITableView {
      *  Config the table view to be able to show placeholders
      */
     private func setup() {
-        let tableViewBundle = Bundle(for: TableView.self)
-        
         // register the placeholder view cell
-        let loadingNib = UINib(nibName: TableView.placeholderNibName, bundle: tableViewBundle)
-        register(loadingNib, forCellReuseIdentifier: TableView.PlaceholderTableViewCellIdentifier)
+        register(cellType: PlaceholderTableViewCell.self)
         
         defaultSeparatorStyle = separatorStyle
         defaultAlwaysBounceVertical = alwaysBounceVertical
@@ -133,8 +130,8 @@ open class TableView: UITableView {
      
      - parameter theSource:   the selected data source
      - parameter theDelegate: the selected delegate
-    */
-    func switchTo(dataSource theDataSource: UITableViewDataSource?, delegate theDelegate: UITableViewDelegate? = nil) {
+     */
+    fileprivate func switchTo(dataSource theDataSource: UITableViewDataSource?, delegate theDelegate: UITableViewDelegate? = nil) {
         // if the data source and delegate are already set, no need to switch
         if dataSource === theDataSource && delegate === theDelegate {
             return
@@ -175,71 +172,22 @@ open class TableView: UITableView {
 }
 
 // MARK: Utilities methods to switch to placeholders
-extension TableView {
+extension TableView: PlaceholdersShowing {
     
-    static let PlaceholderTableViewCellIdentifier = "PlaceholderTableViewCell"
-    static let placeholderNibName = "PlaceholderTableViewCell"
-    
+    var provider: PlaceholdersProvider {
+        return placeholdersProvider
+    }
     
     /// Switch table view data to the selected placeholder
     ///
     /// - Parameter dataSource: the selected placeholder
-    private func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
+    func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
         separatorStyle = .none
         alwaysBounceVertical = false
         switchTo(dataSource: dataSource, delegate: dataSource)
     }
     
-    
-    /// Shows loading placeholder, if you call this method and placeholdersProvider does not contains loading placeholder, assertionFailure is called
-    public func showLoadingPlaceholder() {
-        guard let dataSource = self.placeholdersProvider.loadingDataSource() else {
-            assertionFailure("Your placeholdersProvider is not configured correctly, no placeholder with key PlaceholderKey.loading found!")
-            return
-        }
-        showPlaceholder(with: dataSource)
-    }
-    
-    /// Shows loading placeholder, if you call this method and placeholdersProvider does not contains loading placeholder, assertionFailure is called...
-    public func showNoResultsPlaceholder() {
-        guard let dataSource = self.placeholdersProvider.noResultsDataSource() else {
-            assertionFailure("Your placeholdersProvider is not configured correctly, no placeholder with key PlaceholderKey.noResultsKey found!")
-            return
-        }
-        showPlaceholder(with: dataSource)
-    }
-    
-    /// Shows error placeholder, if you call this method and placeholdersProvider does not contains error placeholder, assertionFailure is called...
-    public func showErrorPlaceholder() {
-        guard let dataSource = self.placeholdersProvider.errorDataSource() else {
-            assertionFailure("Your placeholdersProvider is not configured correctly, no placeholder with key PlaceholderKey.errorKey found!")
-            return
-        }
-        showPlaceholder(with: dataSource)
-    }
-    
-    /// Shows no internet connection placeholder, if you call this method and placeholdersProvider does not contains no internet connection placeholder, assertionFailure is called
-    public func showNoConnectionPlaceholder() {
-        guard let dataSource = self.placeholdersProvider.noConnectionDataSource() else {
-            assertionFailure("Your placeholdersProvider is not configured correctly, no placeholder with key PlaceholderKey.noConnectionKey found!")
-            return
-        }
-        showPlaceholder(with: dataSource)
-    }
-    
-    /// Shows a custom placeholder
-    /// If you call this method and placeholdersProvider does not contains this custom placeholder, assertionFailure is called
-    /// - Parameter key: the key of the custom placeholder
-    public func showCustomPlaceholder(with key: PlaceholderKey) {
-        guard let dataSource = self.placeholdersProvider.dataSourceAndDelegate(with: key) else {
-            assertionFailure("Your placeholdersProvider is not configured correctly, no placeholder with key: \(key.value) found!")
-            return
-        }
-        showPlaceholder(with: dataSource)
-    }
-    
-    
-    /// Shows the default data of the table view 
+    /// Shows the default data of the table view
     public func showDefault() {
         separatorStyle = defaultSeparatorStyle
         alwaysBounceVertical = true
@@ -247,4 +195,16 @@ extension TableView {
     }
 }
 
-
+extension UITableView {
+    /**
+     Register a NIB-Based `UITableViewCell` subclass (conforming to `Reusable` & `NibLoadable`)
+     
+     - parameter cellType: the `UITableViewCell` (`Reusable` & `NibLoadable`-conforming) subclass to register
+     
+     - seealso: `register(_:,forCellReuseIdentifier:)`
+     */
+    final func register<T: UITableViewCell>(cellType: T.Type)
+        where T: Reusable & NibLoadable {
+            self.register(cellType.nib, forCellReuseIdentifier: cellType.reuseIdentifier)
+    }
+}
