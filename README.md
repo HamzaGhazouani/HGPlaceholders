@@ -23,6 +23,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - iOS 9.0+
 - Xcode 8.3
 
+
+## You also may like
+
+* **[HGCircularSlider](https://github.com/HamzaGhazouani/HGCircularSlider)** - A custom reusable circular slider control for iOS application.
+
 ## Installation
 
 HGPlaceholders is available through [CocoaPods](http://cocoapods.org). To install
@@ -33,7 +38,7 @@ it, simply add the following line to your Podfile:
 pod "HGPlaceholders"
 ```
 
-HGCircularSlider is also available through [Carthage](https://github.com/Carthage/Carthage). To install
+HGPlaceholders is also available through [Carthage](https://github.com/Carthage/Carthage). To install
 it, simply add the following line to your Cartfile:
 
 ``` ruby
@@ -112,10 +117,6 @@ You can also install documentation locally using [jazzy](https://github.com/real
 - [x] UICollectionView compatibility
 - [x] Carthage support
 - [ ] Tests
-
-## You also may like
-
-* **[HGCircularSlider](https://github.com/HamzaGhazouani/HGCircularSlider)** - A custom reusable circular slider control for iOS application.
 
 ## Author
 
