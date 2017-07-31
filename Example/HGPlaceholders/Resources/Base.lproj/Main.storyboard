@@ -503,7 +503,7 @@ tableView</string>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="oOi-uK-c7T" customClass="BasicCollectionViewCell" customModule="HGPlaceholders_Example" customModuleProvider="target">
-                                <rect key="frame" x="225" y="0.0" width="150" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
@@ -528,7 +528,7 @@ tableView</string>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomPlaceholderCell" id="U2D-XM-gGF" userLabel="XibCell" customClass="PlaceholderCollectionViewCell" customModule="HGPlaceholders">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                <rect key="frame" x="225" y="0.0" width="150" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>

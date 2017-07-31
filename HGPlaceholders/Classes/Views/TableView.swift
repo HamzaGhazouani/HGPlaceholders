@@ -163,7 +163,7 @@ open class TableView: UITableView {
             return
         }
         // if the data source is in no data placeholder, and the user tries to reload data, we will switch automatically to default
-        if dataSource === placeholdersProvider.noResultsDataSource() {
+        if dataSource is PlaceholderDataSourceDelegate {
             showDefault()
             return
         }

@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.2.1](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.1)
+
+* Fix an issue with custom UICollectionViewLayout
 
 ## [0.2.0](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.0)
 

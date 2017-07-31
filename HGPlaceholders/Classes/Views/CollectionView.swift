@@ -10,9 +10,20 @@ import UIKit
 
 ///  A collection view  that allows to show easily placeholders like no results, no internet connection, etc
 open class CollectionView: UICollectionView {
-
+    
     // MARK: - Public properties
-
+    
+    /**
+     * The layout used to organize the collected view’s items.
+     Assigning a new layout object to this property causes the new layout to be applied (without animations) to the collection view’s items.
+     */
+    open override var collectionViewLayout: UICollectionViewLayout {
+        didSet {
+            if collectionViewLayout === placeholderLayout { return }
+            defaultLayout = collectionViewLayout
+        }
+    }
+    
     /// The placeholdersProvider property is responsible for the placeholders views and data
     final public var placeholdersProvider = PlaceholdersProvider.default {
         willSet {
@@ -20,7 +31,7 @@ open class CollectionView: UICollectionView {
             showDefault()
         }
     }
-
+    
     /**
      * The object that acts as the delegate of the collection view placeholders.
      * The delegate must adopt the PlaceholderDelegate protocol. The delegate is not retained.
@@ -31,7 +42,7 @@ open class CollectionView: UICollectionView {
      * The object that acts as the data source of the collection view.
      * The data source must adopt the UICollectionViewDataSource protocol. The data source is not retained.
      */
-     open override weak var dataSource: UICollectionViewDataSource? {
+    open override weak var dataSource: UICollectionViewDataSource? {
         didSet {
             /* we save only the initial data source (and not a placeholder datasource) to allow to go back to the initial data */
             if  dataSource is PlaceholderDataSourceDelegate { return }
@@ -67,7 +78,6 @@ open class CollectionView: UICollectionView {
     
     /// The placeholderLayout used to show placeholder cell in the UICollectionView size
     fileprivate var placeholderLayout = UICollectionViewFlowLayout()
-
     
     // MARK: - init methods
     
@@ -105,10 +115,8 @@ open class CollectionView: UICollectionView {
     private func setup() {
         // register the placeholder view cell
         register(cellType: PlaceholderCollectionViewCell.self)
-        
         defaultAlwaysBounceVertical = alwaysBounceVertical
         defaultLayout = collectionViewLayout
-        
         customSetup()
     }
     
@@ -155,7 +163,7 @@ open class CollectionView: UICollectionView {
             return
         }
         // if the data source is in no data placeholder, and the user tries to reload data, we will switch automatically to default
-        if dataSource === placeholdersProvider.noResultsDataSource() {
+        if dataSource is PlaceholderDataSourceDelegate {
             showDefault()
             return
         }
@@ -176,14 +184,14 @@ extension CollectionView: PlaceholdersShowing {
     func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
         alwaysBounceVertical = false
         switchTo(dataSource: dataSource, delegate: dataSource)
-        setCollectionViewLayout(placeholderLayout, animated: false)
+        collectionViewLayout = placeholderLayout
     }
     
     /// Shows the default data of the collection view
     public func showDefault() {
         alwaysBounceVertical = true
         switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
-        setCollectionViewLayout(defaultLayout, animated: false)
+        collectionViewLayout = defaultLayout
     }
 }
 
