@@ -72,11 +72,17 @@ open class TableView: UITableView {
     fileprivate weak var defaultDelegate: UITableViewDelegate?
     
     /// The defaultSeparatorStyle is used to save the tableview separator style, because, when you switch to a placeholder, is changed to `.none`
-    internal var defaultSeparatorStyle: UITableViewCellSeparatorStyle!
+    fileprivate var defaultSeparatorStyle: UITableViewCellSeparatorStyle!
     
     /// The defaultAlwaysBounceVertical is used to save the tableview bouncing setup, because, when you switch to a placeholder, the vertical bounce is disabled
     fileprivate var defaultAlwaysBounceVertical: Bool!
     
+    /// The defaultTableViewHeader is used to save the tableview header when you switch to placeholders 
+    fileprivate var defaultTableHeaderView: UIView?
+    
+    /// The defaultTableViewFooter is used to save the tableview footer when you switch to placeholders
+    fileprivate var defaultTableFooterView: UIView?
+
     // MARK: - init methods
     
     /**
@@ -116,7 +122,8 @@ open class TableView: UITableView {
         
         defaultSeparatorStyle = separatorStyle
         defaultAlwaysBounceVertical = alwaysBounceVertical
-        
+        defaultTableHeaderView = tableHeaderView
+        defaultTableFooterView = tableFooterView
         customSetup()
     }
     
@@ -184,6 +191,8 @@ extension TableView: PlaceholdersShowing {
     func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
         separatorStyle = .none
         alwaysBounceVertical = false
+        tableHeaderView = nil
+        tableFooterView = nil
         switchTo(dataSource: dataSource, delegate: dataSource)
     }
     
@@ -191,6 +200,8 @@ extension TableView: PlaceholdersShowing {
     public func showDefault() {
         separatorStyle = defaultSeparatorStyle
         alwaysBounceVertical = true
+        tableHeaderView = defaultTableHeaderView
+        tableFooterView = defaultTableFooterView
         switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
     }
 }
