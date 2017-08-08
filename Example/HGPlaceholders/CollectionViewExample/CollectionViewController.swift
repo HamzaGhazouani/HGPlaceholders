@@ -38,6 +38,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        DispatchQueue.main.async {
+            self.collectionView?.collectionViewLayout.invalidateLayout()
+        }
+    }
+    
+    
     /*
      // MARK: - Navigation
      

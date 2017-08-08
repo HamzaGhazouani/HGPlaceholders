@@ -184,6 +184,7 @@ extension CollectionView: PlaceholdersShowing {
     func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
         alwaysBounceVertical = false
         switchTo(dataSource: dataSource, delegate: dataSource)
+        layoutIfNeeded()
         collectionViewLayout = placeholderLayout
     }
     
@@ -191,6 +192,7 @@ extension CollectionView: PlaceholdersShowing {
     public func showDefault() {
         alwaysBounceVertical = true
         switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
+        layoutIfNeeded()
         collectionViewLayout = defaultLayout
     }
 }

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class PlaceholderCollectionViewCell: UICollectionViewCell {
+/// The default cell used for collection view placeholders (takes the size of the collection view)
+open class PlaceholderCollectionViewCell: UICollectionViewCell {
     
     var onActionButtonTap: (() -> Void)?
 
@@ -17,11 +18,6 @@ class PlaceholderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var placeholderImageView: UIImageView?
     @IBOutlet weak var actionButton: UIButton?
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
-    
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
     
      var cellView: UIView {
         return self
