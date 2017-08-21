@@ -42,7 +42,7 @@ HGPlaceholders is also available through [Carthage](https://github.com/Carthage/
 it, simply add the following line to your Cartfile:
 
 ``` ruby
-github "HamzaGhazouani/HGPlaceholders" == '0.2.1'
+github "HamzaGhazouani/HGPlaceholders" == 0.2.1
 ```
 
 ## Usage
