@@ -35,14 +35,14 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 # Swift 3.1 - Xcode 8.3
-pod "HGPlaceholders"
+pod 'HGPlaceholders', '0.2.1'
 ```
 
 HGPlaceholders is also available through [Carthage](https://github.com/Carthage/Carthage). To install
 it, simply add the following line to your Cartfile:
 
 ``` ruby
-github "HamzaGhazouani/HGPlaceholders"
+github "HamzaGhazouani/HGPlaceholders" == '0.2.1'
 ```
 
 ## Usage
