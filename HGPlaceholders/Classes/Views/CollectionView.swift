@@ -77,7 +77,7 @@ open class CollectionView: UICollectionView {
     fileprivate var defaultLayout: UICollectionViewLayout!
     
     /// The placeholderLayout used to show placeholder cell in the UICollectionView size
-    fileprivate var placeholderLayout = UICollectionViewFlowLayout()
+    fileprivate var placeholderLayout = PlaceholderLayout()
     
     // MARK: - init methods
     
@@ -184,7 +184,7 @@ extension CollectionView: PlaceholdersShowing {
     func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
         alwaysBounceVertical = false
         switchTo(dataSource: dataSource, delegate: dataSource)
-        layoutIfNeeded()
+        collectionViewLayout.invalidateLayout()
         collectionViewLayout = placeholderLayout
     }
     
@@ -192,7 +192,7 @@ extension CollectionView: PlaceholdersShowing {
     public func showDefault() {
         alwaysBounceVertical = true
         switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
-        layoutIfNeeded()
+        collectionViewLayout.invalidateLayout()
         collectionViewLayout = defaultLayout
     }
 }
