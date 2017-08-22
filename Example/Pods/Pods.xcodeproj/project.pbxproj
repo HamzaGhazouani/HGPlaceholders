@@ -14,6 +14,7 @@
 		7A2AB8FE1F278BA2009A7AC5 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB8FD1F278BA2009A7AC5 /* NibLoadable.swift */; };
 		7A2AB9001F278C10009A7AC5 /* CellPlaceholding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB8FF1F278C10009A7AC5 /* CellPlaceholding.swift */; };
 		7A2AB9071F27A098009A7AC5 /* PlaceholdersShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB9061F27A098009A7AC5 /* PlaceholdersShowing.swift */; };
+		7A6BB8D11F4CCBBE008F1F4D /* PlaceholderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB8D01F4CCBBE008F1F4D /* PlaceholderLayout.swift */; };
 		7ADA686E1F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68631F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.swift */; };
 		7ADA686F1F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA68641F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.xib */; };
 		7ADA68701F29DB6400D1C6E5 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68651F29DB6400D1C6E5 /* PlaceholderTableViewCell.swift */; };
@@ -71,6 +72,7 @@
 		7A2AB8FD1F278BA2009A7AC5 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		7A2AB8FF1F278C10009A7AC5 /* CellPlaceholding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPlaceholding.swift; sourceTree = "<group>"; };
 		7A2AB9061F27A098009A7AC5 /* PlaceholdersShowing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholdersShowing.swift; sourceTree = "<group>"; };
+		7A6BB8D01F4CCBBE008F1F4D /* PlaceholderLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderLayout.swift; sourceTree = "<group>"; };
 		7ADA68631F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
 		7ADA68641F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceholderCollectionViewCell.xib; sourceTree = "<group>"; };
 		7ADA68651F29DB6400D1C6E5 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 		7ADA68671F29DB6400D1C6E5 /* PlaceholdersProvider */ = {
 			isa = PBXGroup;
 			children = (
+				7A6BB8D01F4CCBBE008F1F4D /* PlaceholderLayout.swift */,
 				7ADA68681F29DB6400D1C6E5 /* PlaceholderDataSourceDelegate.swift */,
 				7ADA68691F29DB6400D1C6E5 /* PlaceholdersProvider+Defauls.swift */,
 				7ADA686A1F29DB6400D1C6E5 /* PlaceholdersProvider.swift */,
@@ -484,6 +487,7 @@
 				7A2AB8FE1F278BA2009A7AC5 /* NibLoadable.swift in Sources */,
 				EC54A4B61DB869502DA328F829AFD928 /* PlaceholderKey.swift in Sources */,
 				7ADA68721F29DB6400D1C6E5 /* PlaceholderDataSourceDelegate.swift in Sources */,
+				7A6BB8D11F4CCBBE008F1F4D /* PlaceholderLayout.swift in Sources */,
 				7A2AB8FC1F278B60009A7AC5 /* Reusable.swift in Sources */,
 				F2BCB58BBD5EF10FF59B5F9FB2F3107F /* PlaceholderStyle.swift in Sources */,
 				7ADA68701F29DB6400D1C6E5 /* PlaceholderTableViewCell.swift in Sources */,

@@ -112,6 +112,10 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let size = CGSize(width: collectionView.bounds.width, height: 101)
         return size
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 44)
+    }
 }
 
 extension CollectionViewController: PlaceholderDelegate {
