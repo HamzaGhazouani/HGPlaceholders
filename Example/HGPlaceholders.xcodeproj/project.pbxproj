@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		36CD84453BA28A63C2D1E5F2 /* Pods_HGPlaceholders_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2F2F33413967C3AB72E3D8 /* Pods_HGPlaceholders_Example.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7AC37C5C1F38C2CB0065202A /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 7AC37C5B1F38C2CB0065202A /* CHANGELOG.md */; };
+		7A6BB8D31F4D726A008F1F4D /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB8D21F4D726A008F1F4D /* CHANGELOG.md */; };
 		7ADA68581F28F0A800D1C6E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68491F28F0A800D1C6E5 /* AppDelegate.swift */; };
 		7ADA68591F28F0A800D1C6E5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA684B1F28F0A800D1C6E5 /* CollectionViewController.swift */; };
 		7ADA685A1F28F0A800D1C6E5 /* PlaceholdersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA684C1F28F0A800D1C6E5 /* PlaceholdersProvider.swift */; };
@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		665F8E8E336FB2C3FF9CC5BB /* Pods-HGPlaceholders_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGPlaceholders_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGPlaceholders_Example/Pods-HGPlaceholders_Example.release.xcconfig"; sourceTree = "<group>"; };
 		689E591B770DF34951C60BD7 /* Pods_HGPlaceholders_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HGPlaceholders_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AC37C5B1F38C2CB0065202A /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		7A6BB8D21F4D726A008F1F4D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		7ADA68491F28F0A800D1C6E5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ADA684B1F28F0A800D1C6E5 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		7ADA684C1F28F0A800D1C6E5 /* PlaceholdersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholdersProvider.swift; sourceTree = "<group>"; };
@@ -145,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				0913B562CE0DD4319C2FEC31 /* HGPlaceholders.podspec */,
+				7A6BB8D21F4D726A008F1F4D /* CHANGELOG.md */,
 				078B3A00236AA8566A1BDE71 /* README.md */,
-				7AC37C5B1F38C2CB0065202A /* CHANGELOG.md */,
 				9A774175CBC10EE8D6340ED5 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -419,7 +419,7 @@
 				7ADA68611F28F0A800D1C6E5 /* TableViewController.swift in Sources */,
 				7ADA68591F28F0A800D1C6E5 /* CollectionViewController.swift in Sources */,
 				7ADA685A1F28F0A800D1C6E5 /* PlaceholdersProvider.swift in Sources */,
-				7AC37C5C1F38C2CB0065202A /* CHANGELOG.md in Sources */,
+				7A6BB8D31F4D726A008F1F4D /* CHANGELOG.md in Sources */,
 				7ADA685F1F28F0A800D1C6E5 /* ExampleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

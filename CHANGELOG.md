@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.2.4](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.4)
+
+* Fixing UICollectionFlowLayout issue (iOS 9) 
+
+## [0.2.3](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.3)
+
+* Fix the UICollectionView Crash on iOS 9 - Not working - 
+* Make PlaceholderCollectionViewCell open 
+
 ## [0.2.2](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.2)
 
 * Hide the table view header and footer when the placeholder is shown 
