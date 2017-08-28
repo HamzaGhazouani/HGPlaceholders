@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.2.5](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.4)
+
+* Fixing issue: TableView Footer/Header views are not preserved if set programmatically  (iOS 9) 
+
 ## [0.2.4](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.4)
 
 * Fixing UICollectionFlowLayout issue (iOS 9) 
