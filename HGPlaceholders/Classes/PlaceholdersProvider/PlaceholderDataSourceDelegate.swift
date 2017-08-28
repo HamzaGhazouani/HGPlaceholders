@@ -128,6 +128,8 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
             height -= tableView.refreshControl?.bounds.height ?? 0
         }
         height -= (tableView.contentInset.top +  tableView.contentInset.bottom)
+        // subtract tableHeaderView Height out of height
+        height -= tableView.tableHeaderView?.frame.height ?? 0
         return height
     }
     
