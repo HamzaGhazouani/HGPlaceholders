@@ -63,6 +63,30 @@ open class TableView: UITableView {
         }
     }
     
+    /**
+     * Returns an accessory view that is displayed above the table.
+     * The default value is nil. The table header view is different from a section header.
+     */
+    open override var tableHeaderView: UIView? {
+        didSet {
+            if tableHeaderView == nil { return }
+            
+            defaultTableHeaderView = tableHeaderView
+        }
+    }
+    
+    /**
+     * Returns an accessory view that is displayed below the table.
+     * The default value is nil. The table footer view is different from a section footer.
+     */
+    open override var tableFooterView: UIView? {
+        didSet {
+            if tableFooterView == nil { return }
+            
+            defaultTableFooterView = tableFooterView
+        }
+    }
+    
     // MARK: - Private properties
     
     /// The defaultDataSource is used to allow to go back to the initial data source of the table view after switching to a placeholder data source
@@ -77,12 +101,12 @@ open class TableView: UITableView {
     /// The defaultAlwaysBounceVertical is used to save the tableview bouncing setup, because, when you switch to a placeholder, the vertical bounce is disabled
     fileprivate var defaultAlwaysBounceVertical: Bool!
     
-    /// The defaultTableViewHeader is used to save the tableview header when you switch to placeholders 
+    /// The defaultTableViewHeader is used to save the tableview header when you switch to placeholders
     fileprivate var defaultTableHeaderView: UIView?
     
     /// The defaultTableViewFooter is used to save the tableview footer when you switch to placeholders
     fileprivate var defaultTableFooterView: UIView?
-
+    
     // MARK: - init methods
     
     /**
@@ -122,8 +146,10 @@ open class TableView: UITableView {
         
         defaultSeparatorStyle = separatorStyle
         defaultAlwaysBounceVertical = alwaysBounceVertical
+        
         defaultTableHeaderView = tableHeaderView
         defaultTableFooterView = tableFooterView
+        
         customSetup()
     }
     
