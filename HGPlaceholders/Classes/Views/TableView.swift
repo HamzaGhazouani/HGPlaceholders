@@ -217,8 +217,15 @@ extension TableView: PlaceholdersShowing {
     func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
         separatorStyle = .none
         alwaysBounceVertical = false
-        tableHeaderView = nil
-        tableFooterView = nil
+        
+        if let tableStyle = dataSource.placeholder.style, !tableStyle.shouldShowTableViewHeader {
+            tableHeaderView = nil
+        }
+        
+        if let tableStyle = dataSource.placeholder.style, !tableStyle.shouldShowTableViewFooter {
+            tableFooterView = nil
+        }
+        
         switchTo(dataSource: dataSource, delegate: dataSource)
     }
     

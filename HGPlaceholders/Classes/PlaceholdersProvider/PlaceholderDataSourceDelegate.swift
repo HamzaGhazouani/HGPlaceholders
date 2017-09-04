@@ -128,6 +128,17 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
             height -= tableView.refreshControl?.bounds.height ?? 0
         }
         height -= (tableView.contentInset.top +  tableView.contentInset.bottom)
+        
+        // subtract tableHeaderView Height out of height
+        if let tableStyle = placeholder.style, tableStyle.shouldShowTableViewHeader {
+            height -= tableView.tableHeaderView?.frame.height ?? 0
+        }
+        
+        // subtract tableFooterView Height out of height
+        if let tableStyle = placeholder.style, tableStyle.shouldShowTableViewFooter {
+            height -= tableView.tableFooterView?.frame.height ?? 0
+        }
+        
         return height
     }
     
@@ -188,7 +199,9 @@ extension PlaceholderDataSourceDelegate: UICollectionViewDelegateFlowLayout {
         if #available(iOS 10, *) {
             height -= collectionView.refreshControl?.bounds.height ?? 0
         }
+        
         height -= (collectionView.contentInset.top +  collectionView.contentInset.bottom)
+        
         return CGSize(width: collectionView.bounds.width, height: height)
     }
 }
