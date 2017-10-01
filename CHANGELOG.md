@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.2.6](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.6)
+
+* Fixing an archiving issue appeared in the version 0.2.0 and above 
+
 ## [0.2.5](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.5)
 
 * Fixing issue: TableView Footer/Header views are not preserved if set programmatically  (iOS 9) 
