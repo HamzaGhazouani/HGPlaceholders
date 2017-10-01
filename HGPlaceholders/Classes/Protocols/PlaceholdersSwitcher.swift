@@ -31,7 +31,3 @@ public protocol PlaceholdersSwitcher {
     /// Shows the default data of the collection view
     func showDefault()
 }
-
-
-
-
