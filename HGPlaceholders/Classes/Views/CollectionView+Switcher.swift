@@ -13,6 +13,7 @@ import UIKit
 
 // MARK: Utilities methods to switch to placeholders
 extension CollectionView: PlaceholdersSwitcher {
+    
     public func showLoadingPlaceholder() {
         guard let dataSource = placeholdersProvider.loadingDataSource() else {
             assertionFailure(ErrorText.loadingPlaceholder.text)
@@ -56,4 +57,5 @@ extension CollectionView: PlaceholdersSwitcher {
     public func showDefault() {
         self.switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
     }
+    
 }
