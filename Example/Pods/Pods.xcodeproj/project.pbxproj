@@ -13,7 +13,10 @@
 		7A2AB8FC1F278B60009A7AC5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB8FB1F278B60009A7AC5 /* Reusable.swift */; };
 		7A2AB8FE1F278BA2009A7AC5 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB8FD1F278BA2009A7AC5 /* NibLoadable.swift */; };
 		7A2AB9001F278C10009A7AC5 /* CellPlaceholding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB8FF1F278C10009A7AC5 /* CellPlaceholding.swift */; };
-		7A2AB9071F27A098009A7AC5 /* PlaceholdersShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB9061F27A098009A7AC5 /* PlaceholdersShowing.swift */; };
+		7A2AB9071F27A098009A7AC5 /* PlaceholdersSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2AB9061F27A098009A7AC5 /* PlaceholdersSwitcher.swift */; };
+		7A4AFA8E1F7EE27600C3791A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AFA8D1F7EE27600C3791A /* ErrorMessage.swift */; };
+		7A4AFA901F7EEDF800C3791A /* TableView+Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AFA8F1F7EEDF800C3791A /* TableView+Switcher.swift */; };
+		7A4AFA921F7EF0DA00C3791A /* CollectionView+Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AFA911F7EF0DA00C3791A /* CollectionView+Switcher.swift */; };
 		7A6BB8D11F4CCBBE008F1F4D /* PlaceholderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BB8D01F4CCBBE008F1F4D /* PlaceholderLayout.swift */; };
 		7ADA686E1F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA68631F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.swift */; };
 		7ADA686F1F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADA68641F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.xib */; };
@@ -71,7 +74,10 @@
 		7A2AB8FB1F278B60009A7AC5 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		7A2AB8FD1F278BA2009A7AC5 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		7A2AB8FF1F278C10009A7AC5 /* CellPlaceholding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPlaceholding.swift; sourceTree = "<group>"; };
-		7A2AB9061F27A098009A7AC5 /* PlaceholdersShowing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholdersShowing.swift; sourceTree = "<group>"; };
+		7A2AB9061F27A098009A7AC5 /* PlaceholdersSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholdersSwitcher.swift; sourceTree = "<group>"; };
+		7A4AFA8D1F7EE27600C3791A /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		7A4AFA8F1F7EEDF800C3791A /* TableView+Switcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Switcher.swift"; sourceTree = "<group>"; };
+		7A4AFA911F7EF0DA00C3791A /* CollectionView+Switcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+Switcher.swift"; sourceTree = "<group>"; };
 		7A6BB8D01F4CCBBE008F1F4D /* PlaceholderLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderLayout.swift; sourceTree = "<group>"; };
 		7ADA68631F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderCollectionViewCell.swift; sourceTree = "<group>"; };
 		7ADA68641F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceholderCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 				00024CC1405B26A38C3EBDBF52DAEC0A /* PlaceholderData.swift */,
 				76C3D28A7CBA532ECE69044E1E2B87D0 /* PlaceholderKey.swift */,
 				21D51837204F51D9A9FB373F76270C6D /* PlaceholderStyle.swift */,
+				7A4AFA8D1F7EE27600C3791A /* ErrorMessage.swift */,
 			);
 			path = Placeholder;
 			sourceTree = "<group>";
@@ -218,7 +225,7 @@
 				7A2AB8FB1F278B60009A7AC5 /* Reusable.swift */,
 				7A2AB8FD1F278BA2009A7AC5 /* NibLoadable.swift */,
 				7A2AB8FF1F278C10009A7AC5 /* CellPlaceholding.swift */,
-				7A2AB9061F27A098009A7AC5 /* PlaceholdersShowing.swift */,
+				7A2AB9061F27A098009A7AC5 /* PlaceholdersSwitcher.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -249,7 +256,9 @@
 			isa = PBXGroup;
 			children = (
 				7ADA686C1F29DB6400D1C6E5 /* CollectionView.swift */,
+				7A4AFA911F7EF0DA00C3791A /* CollectionView+Switcher.swift */,
 				7ADA686D1F29DB6400D1C6E5 /* TableView.swift */,
+				7A4AFA8F1F7EEDF800C3791A /* TableView+Switcher.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -481,19 +490,22 @@
 				7A2AB9001F278C10009A7AC5 /* CellPlaceholding.swift in Sources */,
 				B31E8F9C28556B714752CFE3045FE1E2 /* HGPlaceholders-dummy.m in Sources */,
 				DAD436A56FE778247F0F7464584051F0 /* Placeholder.swift in Sources */,
+				7A4AFA8E1F7EE27600C3791A /* ErrorMessage.swift in Sources */,
 				D82609B1AF075A3E2A4E2B4CA0C79BFF /* PlaceholderData.swift in Sources */,
 				7ADA686E1F29DB6400D1C6E5 /* PlaceholderCollectionViewCell.swift in Sources */,
 				7ADA68751F29DB6400D1C6E5 /* CollectionView.swift in Sources */,
 				7A2AB8FE1F278BA2009A7AC5 /* NibLoadable.swift in Sources */,
 				EC54A4B61DB869502DA328F829AFD928 /* PlaceholderKey.swift in Sources */,
 				7ADA68721F29DB6400D1C6E5 /* PlaceholderDataSourceDelegate.swift in Sources */,
+				7A4AFA901F7EEDF800C3791A /* TableView+Switcher.swift in Sources */,
 				7A6BB8D11F4CCBBE008F1F4D /* PlaceholderLayout.swift in Sources */,
 				7A2AB8FC1F278B60009A7AC5 /* Reusable.swift in Sources */,
 				F2BCB58BBD5EF10FF59B5F9FB2F3107F /* PlaceholderStyle.swift in Sources */,
 				7ADA68701F29DB6400D1C6E5 /* PlaceholderTableViewCell.swift in Sources */,
 				7ADA68761F29DB6400D1C6E5 /* TableView.swift in Sources */,
 				7ADA68741F29DB6400D1C6E5 /* PlaceholdersProvider.swift in Sources */,
-				7A2AB9071F27A098009A7AC5 /* PlaceholdersShowing.swift in Sources */,
+				7A2AB9071F27A098009A7AC5 /* PlaceholdersSwitcher.swift in Sources */,
+				7A4AFA921F7EF0DA00C3791A /* CollectionView+Switcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
