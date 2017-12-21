@@ -188,7 +188,11 @@ extension PlaceholderDataSourceDelegate: UICollectionViewDelegateFlowLayout {
         if #available(iOS 10, *) {
             height -= collectionView.refreshControl?.bounds.height ?? 0
         }
-        height -= (collectionView.contentInset.top +  collectionView.contentInset.bottom)
+        if #available(iOS 11, *) {
+            height -= (collectionView.adjustedContentInset.top +  collectionView.adjustedContentInset.bottom)
+        } else {
+            height -= (collectionView.contentInset.top +  collectionView.contentInset.bottom)
+        }
         return CGSize(width: collectionView.bounds.width, height: height)
     }
 }
