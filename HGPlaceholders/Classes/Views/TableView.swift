@@ -90,10 +90,10 @@ open class TableView: UITableView {
     // MARK: - Private properties
     
     /// The defaultDataSource is used to allow to go back to the initial data source of the table view after switching to a placeholder data source
-    fileprivate weak var defaultDataSource: UITableViewDataSource?
+    internal weak var defaultDataSource: UITableViewDataSource?
     
     /// The defaultDelegate is used to allow to go back to the initial delegate of the table view after switching to a placeholder delegate
-    fileprivate weak var defaultDelegate: UITableViewDelegate?
+    internal weak var defaultDelegate: UITableViewDelegate?
     
     /// The defaultSeparatorStyle is used to save the tableview separator style, because, when you switch to a placeholder, is changed to `.none`
     fileprivate var defaultSeparatorStyle: UITableViewCellSeparatorStyle!
@@ -164,10 +164,29 @@ open class TableView: UITableView {
      - parameter theSource:   the selected data source
      - parameter theDelegate: the selected delegate
      */
-    fileprivate func switchTo(dataSource theDataSource: UITableViewDataSource?, delegate theDelegate: UITableViewDelegate? = nil) {
+    internal func switchTo(dataSource theDataSource: UITableViewDataSource?, delegate theDelegate: UITableViewDelegate? = nil) {
         // if the data source and delegate are already set, no need to switch
         if dataSource === theDataSource && delegate === theDelegate {
             return
+        }
+        
+        if let placeholderDataSource = theDataSource as? PlaceholderDataSourceDelegate {
+            // placeholder configuration
+            separatorStyle = .none
+            alwaysBounceVertical = false
+            if let tableStyle = placeholderDataSource.placeholder.style, !tableStyle.shouldShowTableViewHeader {
+                tableHeaderView = nil
+            }
+            if let tableStyle = placeholderDataSource.placeholder.style, !tableStyle.shouldShowTableViewFooter {
+                tableFooterView = nil
+            }
+        }
+        else {
+            // default configuration
+            separatorStyle = defaultSeparatorStyle
+            alwaysBounceVertical = defaultAlwaysBounceVertical
+            tableHeaderView = defaultTableHeaderView
+            tableFooterView = defaultTableFooterView
         }
         
         dataSource = theDataSource
@@ -201,41 +220,6 @@ open class TableView: UITableView {
             return
         }
         super.reloadData()
-    }
-}
-
-// MARK: Utilities methods to switch to placeholders
-extension TableView: PlaceholdersShowing {
-    
-    var provider: PlaceholdersProvider {
-        return placeholdersProvider
-    }
-    
-    /// Switch table view data to the selected placeholder
-    ///
-    /// - Parameter dataSource: the selected placeholder
-    func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
-        separatorStyle = .none
-        alwaysBounceVertical = false
-        
-        if let tableStyle = dataSource.placeholder.style, !tableStyle.shouldShowTableViewHeader {
-            tableHeaderView = nil
-        }
-        
-        if let tableStyle = dataSource.placeholder.style, !tableStyle.shouldShowTableViewFooter {
-            tableFooterView = nil
-        }
-        
-        switchTo(dataSource: dataSource, delegate: dataSource)
-    }
-    
-    /// Shows the default data of the table view
-    public func showDefault() {
-        separatorStyle = defaultSeparatorStyle
-        alwaysBounceVertical = true
-        tableHeaderView = defaultTableHeaderView
-        tableFooterView = defaultTableFooterView
-        switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
     }
 }
 

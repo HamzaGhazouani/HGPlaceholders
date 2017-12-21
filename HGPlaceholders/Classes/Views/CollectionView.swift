@@ -65,10 +65,10 @@ open class CollectionView: UICollectionView {
     // MARK: - Private properties
     
     /// The defaultDataSource is used to allow to go back to the initial data source of the collection view after switching to a placeholder data source
-    fileprivate weak var defaultDataSource: UICollectionViewDataSource?
+    internal weak var defaultDataSource: UICollectionViewDataSource?
     
     /// The defaultDelegate is used to allow to go back to the initial delegate of the collection view after switching to a placeholder delegate
-    fileprivate weak var defaultDelegate: UICollectionViewDelegate?
+    internal weak var defaultDelegate: UICollectionViewDelegate?
     
     /// The defaultAlwaysBounceVertical is used to save the collectionView bouncing setup, because, when you switch to a placeholder, the vertical bounce is disabled
     fileprivate var defaultAlwaysBounceVertical: Bool!
@@ -131,15 +131,25 @@ open class CollectionView: UICollectionView {
      - parameter theSource:   the selected data source
      - parameter theDelegate: the selected delegate
      */
-    fileprivate func switchTo(dataSource theDataSource: UICollectionViewDataSource?, delegate theDelegate: UICollectionViewDelegate? = nil) {
+    internal func switchTo(dataSource theDataSource: UICollectionViewDataSource?, delegate theDelegate: UICollectionViewDelegate? = nil) {
         // if the data source and delegate are already set, no need to switch
         if dataSource === theDataSource && delegate === theDelegate {
             return
         }
-        
         dataSource = theDataSource
         delegate = theDelegate
         super.reloadData()
+        collectionViewLayout.invalidateLayout()
+
+        if dataSource is PlaceholderDataSourceDelegate {
+            // Placeholder configuration
+            alwaysBounceVertical = false
+            collectionViewLayout = placeholderLayout
+        } else {
+            // default configuration
+            alwaysBounceVertical = defaultAlwaysBounceVertical
+            collectionViewLayout = defaultLayout
+        }
     }
     
     /// The total number of rows in all sections of the collectionView
@@ -168,32 +178,6 @@ open class CollectionView: UICollectionView {
             return
         }
         super.reloadData()
-    }
-}
-
-// MARK: Utilities methods to switch to placeholders
-extension CollectionView: PlaceholdersShowing {
-    
-    var provider: PlaceholdersProvider {
-        return placeholdersProvider
-    }
-    
-    /// Switch collection view data to the selected placeholder
-    ///
-    /// - Parameter dataSource: the selected placeholder
-    func showPlaceholder(with dataSource: PlaceholderDataSourceDelegate) {
-        alwaysBounceVertical = false
-        switchTo(dataSource: dataSource, delegate: dataSource)
-        collectionViewLayout.invalidateLayout()
-        collectionViewLayout = placeholderLayout
-    }
-    
-    /// Shows the default data of the collection view
-    public func showDefault() {
-        alwaysBounceVertical = true
-        switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
-        collectionViewLayout.invalidateLayout()
-        collectionViewLayout = defaultLayout
     }
 }
 
