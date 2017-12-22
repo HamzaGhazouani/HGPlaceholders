@@ -28,7 +28,6 @@ class PlaceholderDataSourceDelegate: NSObject {
     
     // MARK: Utilities methods 
     
-    
     /// fill the placeholder cell to the texts and styles
     ///
     /// - Parameters:
@@ -47,7 +46,6 @@ class PlaceholderDataSourceDelegate: NSObject {
             cell.apply(data: data)
         }
     }
-    
     
     /// Animate the cell (UICollectionViewCell / UITableViewCell)
     ///
@@ -68,8 +66,24 @@ class PlaceholderDataSourceDelegate: NSObject {
             
         }, completion: nil)
     }
+    
+    /// Returns the height of the scroll view by removing the top and bottom inset + the height of the refresh control
+    ///
+    /// - Parameter scrollView: the scroll view
+    /// - Returns: the height of the scroll view without refresh control, top and bottom inset
+    func height(of scrollView: UIScrollView) -> CGFloat {
+        var height = scrollView.bounds.height
+        if #available(iOS 10, *) {
+            height -= scrollView.refreshControl?.bounds.height ?? 0
+        }
+        if #available(iOS 11, *) {
+            height -= (scrollView.adjustedContentInset.top + scrollView.adjustedContentInset.bottom)
+        } else {
+            height -= (scrollView.contentInset.top + scrollView.contentInset.bottom)
+        }
+        return height
+    }
 }
-
 
 // MARK: table view data source methods
 
@@ -110,7 +124,6 @@ extension PlaceholderDataSourceDelegate: UITableViewDataSource {
     }
 }
 
-
 // MARK: - table view delegate methods 
 
 /**
@@ -123,23 +136,19 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
     // the placeholder cell takes always the size of the table view
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        var height = tableView.bounds.height
-        if #available(iOS 10, *) {
-            height -= tableView.refreshControl?.bounds.height ?? 0
-        }
-        height -= (tableView.contentInset.top +  tableView.contentInset.bottom)
+        var tableViewHeight = height(of: tableView)
         
         // subtract tableHeaderView Height out of height
         if let tableStyle = placeholder.style, tableStyle.shouldShowTableViewHeader {
-            height -= tableView.tableHeaderView?.frame.height ?? 0
+            tableViewHeight -= tableView.tableHeaderView?.bounds.height ?? 0
         }
         
         // subtract tableFooterView Height out of height
         if let tableStyle = placeholder.style, tableStyle.shouldShowTableViewFooter {
-            height -= tableView.tableFooterView?.frame.height ?? 0
+            tableViewHeight -= tableView.tableFooterView?.bounds.height ?? 0
         }
         
-        return height
+        return tableViewHeight
     }
     
     // animate the cell
@@ -176,12 +185,9 @@ extension PlaceholderDataSourceDelegate: UICollectionViewDataSource {
             guard let placeholderCollectionView = (collectionView as? CollectionView) else { return }
             placeholderCollectionView.placeholderDelegate?.view(collectionView, actionButtonTappedFor: self.placeholder)
         }
-        
         return cell
     }
-
 }
-
 
 extension PlaceholderDataSourceDelegate: UICollectionViewDelegateFlowLayout {
     
@@ -195,14 +201,8 @@ extension PlaceholderDataSourceDelegate: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        var height = collectionView.bounds.height
-        if #available(iOS 10, *) {
-            height -= collectionView.refreshControl?.bounds.height ?? 0
-        }
-        
-        height -= (collectionView.contentInset.top +  collectionView.contentInset.bottom)
-        
-        return CGSize(width: collectionView.bounds.width, height: height)
+        let collectionViewHeight = height(of: collectionView)
+        return CGSize(width: collectionView.bounds.width, height: collectionViewHeight)
     }
 }
 
