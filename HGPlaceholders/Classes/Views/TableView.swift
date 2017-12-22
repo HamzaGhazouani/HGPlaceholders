@@ -170,12 +170,16 @@ open class TableView: UITableView {
             return
         }
         
-        if theDataSource is PlaceholderDataSourceDelegate {
+        if let placeholderDataSource = theDataSource as? PlaceholderDataSourceDelegate {
             // placeholder configuration
             separatorStyle = .none
             alwaysBounceVertical = false
-            tableHeaderView = nil
-            tableFooterView = nil
+            if let tableStyle = placeholderDataSource.placeholder.style, !tableStyle.shouldShowTableViewHeader {
+                tableHeaderView = nil
+            }
+            if let tableStyle = placeholderDataSource.placeholder.style, !tableStyle.shouldShowTableViewFooter {
+                tableFooterView = nil
+            }
         }
         else {
             // default configuration
