@@ -33,6 +33,12 @@ public struct PlaceholderStyle {
     /// Should display the placeholder with animation or not
     public var isAnimated = true
     
+    /// Should display the tableViewHeader or not
+    public var shouldShowTableViewHeader = false
+    
+    /// Should display the tableViewFooter or not
+    public var shouldShowTableViewFooter = false
+    
     // MARK: init methods
     
     /// Create and return a PlaceholderStyle object
