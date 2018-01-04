@@ -66,7 +66,7 @@ open class CollectionView: UICollectionView {
      * A Boolean value that determines whether bouncing always occurs when the placeholder is shown.
      * The default value is false
      */
-    open var placeholdersAlwaysBounceVertical = true
+    open var placeholdersAlwaysBounceVertical = false
     
     // MARK: - Private properties
     
