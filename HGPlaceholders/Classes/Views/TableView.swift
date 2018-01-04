@@ -87,6 +87,12 @@ open class TableView: UITableView {
         }
     }
     
+    /**
+     * A Boolean value that determines whether bouncing always occurs when the placeholder is shown.
+     * The default value is false
+     */
+    open var placeholdersAlwaysBounceVertical = true
+    
     // MARK: - Private properties
     
     /// The defaultDataSource is used to allow to go back to the initial data source of the table view after switching to a placeholder data source
@@ -173,7 +179,7 @@ open class TableView: UITableView {
         if let placeholderDataSource = theDataSource as? PlaceholderDataSourceDelegate {
             // placeholder configuration
             separatorStyle = .none
-            alwaysBounceVertical = false
+            alwaysBounceVertical = placeholdersAlwaysBounceVertical
             let style = placeholderDataSource.placeholder.style
             if style?.shouldShowTableViewHeader != true { // style = nil or shouldShowTableViewHeader == false
                 tableHeaderView = nil
