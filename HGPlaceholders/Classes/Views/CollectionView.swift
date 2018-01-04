@@ -77,7 +77,7 @@ open class CollectionView: UICollectionView {
     fileprivate var defaultLayout: UICollectionViewLayout!
     
     /// The placeholderLayout used to show placeholder cell in the UICollectionView size
-    fileprivate var placeholderLayout = PlaceholderLayout()
+    fileprivate let placeholderLayout = UICollectionViewFlowLayout()
     
     // MARK: - init methods
     
@@ -136,10 +136,6 @@ open class CollectionView: UICollectionView {
         if dataSource === theDataSource && delegate === theDelegate {
             return
         }
-        dataSource = theDataSource
-        delegate = theDelegate
-        super.reloadData()
-        collectionViewLayout.invalidateLayout()
 
         if dataSource is PlaceholderDataSourceDelegate {
             // Placeholder configuration
@@ -150,6 +146,9 @@ open class CollectionView: UICollectionView {
             alwaysBounceVertical = defaultAlwaysBounceVertical
             collectionViewLayout = defaultLayout
         }
+        dataSource = theDataSource
+        delegate = theDelegate
+        super.reloadData()
     }
     
     /// The total number of rows in all sections of the collectionView

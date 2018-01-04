@@ -221,6 +221,17 @@ open class TableView: UITableView {
         }
         super.reloadData()
     }
+    
+    /**
+     Called when the adjusted content insets of the scroll view change.
+     */
+    open override func adjustedContentInsetDidChange() {
+        if dataSource is PlaceholderDataSourceDelegate {
+            // Force table view to recalculate the cell height, because the method tableView:heightForRowAt: is called before adjusting the content of the scroll view
+            guard let indexPaths = indexPathsForVisibleRows else { return }
+            reloadRows(at: indexPaths, with: .automatic)
+        }
+    }
 }
 
 extension UITableView {
