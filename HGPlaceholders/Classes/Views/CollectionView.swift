@@ -62,6 +62,12 @@ open class CollectionView: UICollectionView {
         }
     }
     
+    /**
+     * A Boolean value that determines whether bouncing always occurs when the placeholder is shown.
+     * The default value is false
+     */
+    open var placeholdersAlwaysBounceVertical = true
+    
     // MARK: - Private properties
     
     /// The defaultDataSource is used to allow to go back to the initial data source of the collection view after switching to a placeholder data source
@@ -137,9 +143,9 @@ open class CollectionView: UICollectionView {
             return
         }
 
-        if dataSource is PlaceholderDataSourceDelegate {
+        if theDataSource is PlaceholderDataSourceDelegate {
             // Placeholder configuration
-            alwaysBounceVertical = false
+            alwaysBounceVertical = placeholdersAlwaysBounceVertical
             collectionViewLayout = placeholderLayout
         } else {
             // default configuration
