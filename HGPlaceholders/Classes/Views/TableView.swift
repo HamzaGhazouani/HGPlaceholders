@@ -174,10 +174,11 @@ open class TableView: UITableView {
             // placeholder configuration
             separatorStyle = .none
             alwaysBounceVertical = false
-            if let tableStyle = placeholderDataSource.placeholder.style, !tableStyle.shouldShowTableViewHeader {
+            let style = placeholderDataSource.placeholder.style
+            if style?.shouldShowTableViewHeader != true { // style = nil or shouldShowTableViewHeader == false
                 tableHeaderView = nil
             }
-            if let tableStyle = placeholderDataSource.placeholder.style, !tableStyle.shouldShowTableViewFooter {
+            if style?.shouldShowTableViewFooter != true {
                 tableFooterView = nil
             }
         }

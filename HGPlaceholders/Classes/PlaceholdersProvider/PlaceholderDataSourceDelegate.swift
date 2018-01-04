@@ -139,12 +139,13 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
         var tableViewHeight = height(of: tableView)
         
         // subtract tableHeaderView Height out of height
-        if let tableStyle = placeholder.style, tableStyle.shouldShowTableViewHeader {
+        let style = placeholder.style
+        if style?.shouldShowTableViewHeader != true {
             tableViewHeight -= tableView.tableHeaderView?.bounds.height ?? 0
         }
         
         // subtract tableFooterView Height out of height
-        if let tableStyle = placeholder.style, tableStyle.shouldShowTableViewFooter {
+        if style?.shouldShowTableViewFooter != true {
             tableViewHeight -= tableView.tableFooterView?.bounds.height ?? 0
         }
         
