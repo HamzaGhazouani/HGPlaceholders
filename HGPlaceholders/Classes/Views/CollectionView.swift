@@ -19,7 +19,9 @@ open class CollectionView: UICollectionView {
      */
     open override var collectionViewLayout: UICollectionViewLayout {
         didSet {
-            if collectionViewLayout === placeholderLayout { return }
+            if collectionViewLayout === placeholderLayout {
+                return
+            }
             defaultLayout = collectionViewLayout
         }
     }
@@ -57,7 +59,9 @@ open class CollectionView: UICollectionView {
     open override weak var delegate: UICollectionViewDelegate? {
         didSet {
             /* we save only the initial delegate (and not the placeholder delegate) to allow to go back to the initial one */
-            if  delegate is PlaceholderDataSourceDelegate { return }
+            if  delegate is PlaceholderDataSourceDelegate {
+                return
+            }
             defaultDelegate = delegate
         }
     }
