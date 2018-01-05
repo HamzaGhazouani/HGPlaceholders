@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.3.0](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.3.0)
+
+* Add more properties for customization: titleFont, subtitleFont and actionTitleFont
+* Add the property `placeholdersAlwaysBounceVertical` to allow/disable vertical bouncing when the placeholder is shown
+* Start supporting iOS 8
+* Add ability to show/Hide tableHeader & tableFooter when the placeholders are shown
+* Use adjustedContentInset instead of contentInset for iOS 11 and later (compatibility iPhone X)
+
 ## [0.2.6](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.2.6)
 
 * Fixing an archiving issue appeared in the version 0.2.0 and above 

@@ -20,7 +20,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-- iOS 9.0+
+- iOS 8.0+
 - Xcode 8.3
 
 
@@ -106,17 +106,13 @@ class ProjectNameCollectionView: CollectionView {
 }
 ```
 
-You can also add new placeholders fully customizable, you should keep en mind that the view will take table view frame, and placeholder can have only one action, please check the example project 
+You can also add new placeholders fully customizable, you should keep in mind that the view will take table view frame, and placeholder can have only one action, please check the example project
 
 
 ## Documentation
 Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/HGPlaceholders/).<br/>
 You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
 
-## Roadmap
-- [x] UICollectionView compatibility
-- [x] Carthage support
-- [ ] Tests
 
 ## Author
 
