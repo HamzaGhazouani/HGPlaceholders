@@ -21,7 +21,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 - iOS 8.0+
-- Xcode 8.3
+- Xcode 9.2
 
 
 ## You also may like
@@ -34,7 +34,6 @@ HGPlaceholders is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-# Swift 3.1 - Xcode 8.3
 pod 'HGPlaceholders'
 ```
 

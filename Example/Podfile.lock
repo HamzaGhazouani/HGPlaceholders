@@ -1,5 +1,5 @@
 PODS:
-  - HGPlaceholders (0.2.6)
+  - HGPlaceholders (0.3.0)
 
 DEPENDENCIES:
   - HGPlaceholders (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HGPlaceholders: 71e527e45aad91f4923474bc1cf71c21172bd0cb
+  HGPlaceholders: ff5ccd1ebc6cd4e8d10f25ba0f2f904e5a43a7a4
 
 PODFILE CHECKSUM: 1959d4ad270c1212a48c21e8def5087961eb0a30
 
