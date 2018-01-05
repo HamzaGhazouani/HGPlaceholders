@@ -17,6 +17,10 @@ extension PlaceholdersProvider {
         commonStyle.titleColor = .black
         commonStyle.isAnimated = false
         
+        commonStyle.titleFont = UIFont(name: "AvenirNextCondensed-HeavyItalic", size: 19)!
+        commonStyle.subtitleFont = UIFont(name: "AvenirNextCondensed-Italic", size: 19)!
+        commonStyle.actionTitleFont = UIFont(name: "AvenirNextCondensed-Heavy", size: 19)!
+        
         var loadingStyle = commonStyle
         loadingStyle.actionBackgroundColor = .clear
         loadingStyle.actionTitleColor = .gray

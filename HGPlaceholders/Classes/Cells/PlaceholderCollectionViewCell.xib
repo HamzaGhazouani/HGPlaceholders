@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,24 +25,22 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="253" image="halloween-loading" translatesAutoresizingMaskIntoConstraints="NO" id="c7U-EM-TGb">
                                 <rect key="frame" x="76.5" y="0.0" width="120" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="100" id="Zn5-rH-3Dz"/>
+                                    <constraint firstAttribute="width" secondItem="c7U-EM-TGb" secondAttribute="height" priority="100" id="sgm-6z-Mtd"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cIN-cg-xzD">
                                 <rect key="frame" x="0.0" y="148" width="273" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B15-GK-QdK">
                                 <rect key="frame" x="0.0" y="176" width="273" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                </variation>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="999" verticalCompressionResistancePriority="999" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-2S-oJM">
                                 <rect key="frame" x="126.5" y="213" width="20" height="20"/>
@@ -90,7 +89,6 @@
                     </button>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.047058823530000002" green="0.63137254899999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="MXU-dt-vhe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="3rF-DX-Ipu"/>
                 <constraint firstAttribute="bottom" secondItem="2sn-za-oDj" secondAttribute="bottom" constant="20" id="IuB-zj-UQA"/>

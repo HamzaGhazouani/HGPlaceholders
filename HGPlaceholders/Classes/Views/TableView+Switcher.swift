@@ -54,5 +54,4 @@ extension TableView: PlaceholdersSwitcher {
     public func showDefault() {
         self.switchTo(dataSource: defaultDataSource, delegate: defaultDelegate)
     }
-    
 }

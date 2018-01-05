@@ -24,17 +24,28 @@ public struct Placeholder {
     public let key: PlaceholderKey
     
     
-    /// Create and return a Placeholder object with the specified identifier, data, style, and key
+    /// Create a placeholder by using the data and style objects
     ///
     /// - Parameters:
-    ///   - cellIdentifier: the identifier of the cell to use as a placeholder, set it only if you want to add a custom placeholder
-    ///   - data: the data of the placeholder s
+    ///   - data: the data of the placeholder
     ///   - style: the style of the placeholder
     ///   - key: the unique key of the placeholder
-    public init(cellIdentifier: String? = nil, data: PlaceholderData? = nil, style: PlaceholderStyle? = nil, key: PlaceholderKey) {
+    public init(data: PlaceholderData, style: PlaceholderStyle, key: PlaceholderKey) {
         self.key = key
-        self.cellIdentifier = cellIdentifier
         self.style = style
         self.data = data
+        
+        self.cellIdentifier = nil
+    }
+    
+    
+    /// Create a placeholder by using custom xib file
+    ///
+    /// - Parameters:
+    ///   - cellIdentifier: The identifier of the cell to use as a placeholder
+    ///   - key: the unique key of the placeholder
+    public init(cellIdentifier: String, key: PlaceholderKey) {
+        self.key = key
+        self.cellIdentifier = cellIdentifier
     }
 }
