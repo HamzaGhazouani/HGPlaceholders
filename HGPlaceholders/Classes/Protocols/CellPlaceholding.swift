@@ -31,7 +31,7 @@ protocol CellPlaceholding {
     ///  Sets in the cell the placeholder texts, image, ...
     ///
     /// - Parameter data: the data of the cell (texts, images, etc)
-    func apply(data: PlaceholderData)
+    func apply(data: PlaceholderData?)
 }
 
 
@@ -45,38 +45,35 @@ extension CellPlaceholding {
     ///   - style: the style to apply
     ///   - tintColor: the tint color, is used for some items when the style color is nil
     internal func apply(style: PlaceholderStyle, tintColor: UIColor?) {
-        cellView.backgroundColor = style.backgroundColor ?? .clear
+        cellView.backgroundColor = style.backgroundColor
         
         let buttonBackgroundColor = style.actionBackgroundColor ?? tintColor
         actionButton?.backgroundColor = buttonBackgroundColor
         
-        let actionColor = style.actionTitleColor ?? .white
+        let actionColor = style.actionTitleColor
         actionButton?.setTitleColor(actionColor, for: .normal)
+        actionButton?.titleLabel?.font = style.actionTitleFont
         
-        activityIndicator?.color = style.activityIndicatorColor ?? .lightGray
+        activityIndicator?.color = style.activityIndicatorColor
         
-        titleLabel?.textColor = style.titleColor ?? .darkText
-        subtitleLabel?.textColor = style.subtitleColor ?? .gray
+        titleLabel?.textColor = style.titleColor
+        titleLabel?.font = style.titleFont
         
-        
+        subtitleLabel?.textColor = style.subtitleColor
+        subtitleLabel?.font = style.subtitleFont
     }
     
     ///  Sets in the cell the placeholder texts, image, ...
     ///
     /// - Parameter data: the data of the cell (texts, images, etc)
-    internal func apply(data: PlaceholderData) {
-        actionButton?.setTitle(data.action, for: .normal)
-        actionButton?.isHidden = (data.action == nil)
+    internal func apply(data: PlaceholderData?) {
+        actionButton?.setTitle(data?.action, for: .normal)
+        actionButton?.isHidden = (data?.action == nil)
         
-        titleLabel?.text = data.title
-        titleLabel?.isHidden = (data.title == nil)
+        titleLabel?.text = data?.title
+        subtitleLabel?.text = data?.subtitle
+        placeholderImageView?.image = data?.image
         
-        subtitleLabel?.text = data.subtitle
-        subtitleLabel?.isHidden = (data.title == nil)
-        
-        placeholderImageView?.image = data.image
-        placeholderImageView?.isHidden = (data.image == nil)
-        
-        data.showsLoading == true ? activityIndicator?.startAnimating() : activityIndicator?.stopAnimating()
+        data?.showsLoading == true ? activityIndicator?.startAnimating() : activityIndicator?.stopAnimating()
     }
 }

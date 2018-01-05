@@ -109,7 +109,7 @@ open class CollectionView: UICollectionView {
      
      - returns: Returns an initialized collectionView object, or nil if the object could not be successfully initialized.
      */
-    public override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+     override public init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         
         setup()
