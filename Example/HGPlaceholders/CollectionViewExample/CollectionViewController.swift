@@ -14,7 +14,7 @@ private let reuseIdentifier = "Cell"
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var placeholderCollectionView: CollectionView? {
-        get { return collectionView as? CollectionView }
+        return collectionView as? CollectionView
     }
     
     var data = [
@@ -119,6 +119,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 }
 
 extension CollectionViewController: PlaceholderDelegate {
+    
     func view(_ view: Any, actionButtonTappedFor placeholder: Placeholder) {
         (view as? CollectionView)?.showDefault()
     }

@@ -70,25 +70,25 @@ final public class PlaceholdersProvider {
     
     /// Returns an instance of PlaceholderDataSourceDelegate of default loading key
     /// - Returns: returns PlaceholderDataSourceDelegate instance, nil of no placeholder found with this key
-    func loadingDataSource() -> PlaceholderDataSourceDelegate?  {
+    func loadingDataSource() -> PlaceholderDataSourceDelegate? {
         return dataSourceAndDelegate(with: .loadingKey)
     }
     
     /// Returns an instance of PlaceholderDataSourceDelegate of default error key
     /// - Returns: returns PlaceholderDataSourceDelegate instance, nil of no placeholder found with this key
-    func errorDataSource() -> PlaceholderDataSourceDelegate?  {
+    func errorDataSource() -> PlaceholderDataSourceDelegate? {
         return dataSourceAndDelegate(with: .errorKey)!
     }
     
     /// Returns an instance of PlaceholderDataSourceDelegate of default no results key
     /// - Returns: returns PlaceholderDataSourceDelegate instance, nil of no placeholder found with this key
-    func noResultsDataSource() -> PlaceholderDataSourceDelegate?  {
+    func noResultsDataSource() -> PlaceholderDataSourceDelegate? {
         return dataSourceAndDelegate(with: .noResultsKey)!
     }
     
     /// Returns an instance of PlaceholderDataSourceDelegate of default no connection key
     /// - Returns: returns PlaceholderDataSourceDelegate instance, nil of no placeholder found with this key
-    func noConnectionDataSource() -> PlaceholderDataSourceDelegate?  {
+    func noConnectionDataSource() -> PlaceholderDataSourceDelegate? {
         return dataSourceAndDelegate(with: .noConnectionKey)
     }
 }

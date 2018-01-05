@@ -46,7 +46,9 @@ open class TableView: UITableView {
     weak open override var dataSource: UITableViewDataSource? {
         didSet {
             /* we save only the initial data source (and not a placeholder datasource) to allow to go back to the initial data */
-            if  dataSource is PlaceholderDataSourceDelegate { return }
+            if  dataSource is PlaceholderDataSourceDelegate {
+                return
+            }
             defaultDataSource = dataSource
         }
     }
@@ -58,7 +60,9 @@ open class TableView: UITableView {
     open override weak var delegate: UITableViewDelegate? {
         didSet {
             /* we save only the initial delegate (and not the placeholder delegate) to allow to go back to the initial one */
-            if  delegate is PlaceholderDataSourceDelegate { return }
+            if  delegate is PlaceholderDataSourceDelegate {
+                return
+            }
             defaultDelegate = delegate
         }
     }
@@ -69,7 +73,9 @@ open class TableView: UITableView {
      */
     open override var tableHeaderView: UIView? {
         didSet {
-            if tableHeaderView == nil { return }
+            if tableHeaderView == nil {
+                return
+            }
             
             defaultTableHeaderView = tableHeaderView
         }
