@@ -1,6 +1,6 @@
 # HGPlaceholders
 
-[![CI Status](http://img.shields.io/travis/HamzaGhazouani/HGPlaceholders.svg?style=flat)](https://travis-ci.org/HamzaGhazouani/HGPlaceholders)
+[![Backers on Open Collective](https://opencollective.com/hgplaceholders/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/hgplaceholders/sponsors/badge.svg)](#sponsors) [![CI Status](http://img.shields.io/travis/HamzaGhazouani/HGPlaceholders.svg?style=flat)](https://travis-ci.org/HamzaGhazouani/HGPlaceholders)
 [![Version](https://img.shields.io/cocoapods/v/HGPlaceholders.svg?style=flat)](http://cocoapods.org/pods/HGPlaceholders)
 [![License](https://img.shields.io/cocoapods/l/HGPlaceholders.svg?style=flat)](http://cocoapods.org/pods/HGPlaceholders)
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)]()
@@ -116,6 +116,36 @@ You can also install documentation locally using [jazzy](https://github.com/real
 ## Author
 
 Hamza Ghazouani, hamza.ghazouani@gmail.com
+
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="graphs/contributors"><img src="https://opencollective.com/hgplaceholders/contributors.svg?width=890" /></a>
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/hgplaceholders#backer)]
+
+<a href="https://opencollective.com/hgplaceholders#backers" target="_blank"><img src="https://opencollective.com/hgplaceholders/backers.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/hgplaceholders#sponsor)]
+
+<a href="https://opencollective.com/hgplaceholders/sponsor/0/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/1/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/2/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/3/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/4/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/5/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/6/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/7/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/8/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/hgplaceholders/sponsor/9/website" target="_blank"><img src="https://opencollective.com/hgplaceholders/sponsor/9/avatar.svg"></a>
+
+
 
 ## License
 
