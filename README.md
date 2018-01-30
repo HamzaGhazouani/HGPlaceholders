@@ -27,6 +27,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## You also may like
 
 * **[HGCircularSlider](https://github.com/HamzaGhazouani/HGCircularSlider)** - A custom reusable circular slider control for iOS application.
+* **[HGRippleRadarView](https://github.com/HamzaGhazouani/HGRippleRadarView)** - AA beautiful radar view to show nearby users with ripple animation, fully customizable
 
 ## Installation
 
