@@ -88,7 +88,7 @@ The framework contains different defaults placeholders:
 
 If you want to change the default palceholders for all table views in your project: 
 
-```
+```swift
 class ProjectNameTableView: TableView {
 
     override func customSetup() {
@@ -97,7 +97,7 @@ class ProjectNameTableView: TableView {
 }
 ```
 
-```
+```swift
 class ProjectNameCollectionView: CollectionView {
 
     override func customSetup() {
