@@ -94,6 +94,16 @@ open class TableView: UITableView {
     }
     
     /**
+     * Keeps user seperatorStyle instead of overriding with system default
+     * The default value is UITableViewCellSeparatorStyle.singleLine
+     */
+    open override var separatorStyle: UITableViewCellSeparatorStyle {
+        didSet {
+            defaultSeparatorStyle = separatorStyle
+        }
+    }
+    
+    /**
      * A Boolean value that determines whether bouncing always occurs when the placeholder is shown.
      * The default value is false
      */
