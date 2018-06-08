@@ -68,7 +68,8 @@ extension CellPlaceholding {
     /// - Parameter data: the data of the cell (texts, images, etc)
     internal func apply(data: PlaceholderData?) {
         actionButton?.setTitle(data?.action, for: .normal)
-        actionButton?.isHidden = (data?.action == nil)
+        
+        actionButton?.isHidden = true
         
         titleLabel?.text = data?.title
         subtitleLabel?.text = data?.subtitle
