@@ -185,7 +185,7 @@ open class TableView: UITableView {
         if let placeholderDataSource = theDataSource as? PlaceholderDataSourceDelegate {
             // placeholder configuration
             separatorStyle = .none
-            alwaysBounceVertical = placeholdersAlwaysBounceVertical
+            alwaysBounceVertical = true
             let style = placeholderDataSource.placeholder.style
             if style?.shouldShowTableViewHeader != true { // style = nil or shouldShowTableViewHeader == false
                 tableHeaderView = nil
