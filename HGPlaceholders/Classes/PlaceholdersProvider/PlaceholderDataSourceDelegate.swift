@@ -76,7 +76,9 @@ class PlaceholderDataSourceDelegate: NSObject {
     func height(of scrollView: UIScrollView, headerHeight: CGFloat = 0) -> CGFloat {
         var height = scrollView.bounds.height
         if #available(iOS 10, *) {
-            height -= scrollView.refreshControl?.bounds.height ?? 0
+            if scrollView.refreshControl?.isRefreshing ?? false {
+                height -= scrollView.refreshControl?.bounds.height ?? 0
+            }
         }
         if #available(iOS 11, *) {
             height -= (scrollView.adjustedContentInset.top + scrollView.adjustedContentInset.bottom)
