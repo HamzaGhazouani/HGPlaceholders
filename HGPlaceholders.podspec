@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'HGPlaceholders'
-s.version          = '0.3.0'
+s.version          = '0.4.0'
 s.summary          = 'Nice library to show placeholders and Empty States for any UITableView/UICollectionView in your project'
 
 # This description is used to generate tags and improve search results.

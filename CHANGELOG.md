@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.0](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.4.0)
+
+* Swift 4.2 compatibility 
+
 ## [0.3.0](https://github.com/HamzaGhazouani/HGPlaceholders/releases/tag/0.3.0)
 
 * Add more properties for customization: titleFont, subtitleFont and actionTitleFont
