@@ -58,9 +58,11 @@ extension CellPlaceholding {
         
         titleLabel?.textColor = style.titleColor
         titleLabel?.font = style.titleFont
+        titleLabel?.textAlignment = style.titleTextAlignment
         
         subtitleLabel?.textColor = style.subtitleColor
         subtitleLabel?.font = style.subtitleFont
+        subtitleLabel?.textAlignment = style.subtitleTextAlignment
     }
     
     ///  Sets in the cell the placeholder texts, image, ...
