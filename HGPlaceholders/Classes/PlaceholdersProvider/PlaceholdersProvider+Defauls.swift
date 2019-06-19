@@ -112,4 +112,10 @@ extension PlaceholdersProvider {
 
 struct HGColor {
     static let violet = UIColor(red: 250.0/255.0, green: 222.0/255.0, blue: 251.0/255.0, alpha: 1.0)
+	static var darkText: UIColor {
+		if #available(iOS 13, *) {
+			return .label
+		}
+		return .darkText
+	}
 }
