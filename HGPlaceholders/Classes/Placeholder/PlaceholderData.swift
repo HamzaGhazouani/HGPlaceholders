@@ -40,7 +40,7 @@ public struct PlaceholderData {
     public static var noResults: PlaceholderData {
         var noResultsStyle = PlaceholderData()
         noResultsStyle.image = PlaceholdersProvider.image(named: "hg_default-no_results")
-        noResultsStyle.title = NSLocalizedString("No results founds", comment: "")
+        noResultsStyle.title = NSLocalizedString("No Requests Found", comment: "")
         noResultsStyle.subtitle = NSLocalizedString("We can’t find what\nyou’re looking for.", comment: "")
         noResultsStyle.action = NSLocalizedString("Try Again!", comment: "")
         

@@ -73,16 +73,19 @@ class PlaceholderDataSourceDelegate: NSObject {
     ///
     /// - Parameter scrollView: the scroll view
     /// - Returns: the height of the scroll view without refresh control, top and bottom inset
-    func height(of scrollView: UIScrollView) -> CGFloat {
+    func height(of scrollView: UIScrollView, headerHeight: CGFloat = 0) -> CGFloat {
         var height = scrollView.bounds.height
         if #available(iOS 10, *) {
-            height -= scrollView.refreshControl?.bounds.height ?? 0
+            if scrollView.refreshControl?.isRefreshing ?? false {
+                height -= scrollView.refreshControl?.bounds.height ?? 0
+            }
         }
         if #available(iOS 11, *) {
             height -= (scrollView.adjustedContentInset.top + scrollView.adjustedContentInset.bottom)
         } else {
             height -= (scrollView.contentInset.top + scrollView.contentInset.bottom)
         }
+        height -= headerHeight
         return height
     }
     
@@ -139,7 +142,7 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
     // the placeholder cell takes always the size of the table view
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        var tableViewHeight = height(of: tableView)
+        var tableViewHeight = height(of: tableView, headerHeight: tableView.sectionHeaderHeight)
         
         // subtract tableHeaderView Height out of height
         let style = placeholder.style
