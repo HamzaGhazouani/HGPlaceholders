@@ -37,15 +37,15 @@ public struct Placeholder {
         
         self.cellIdentifier = nil
     }
-    
-    
     /// Create a placeholder by using custom xib file
     ///
     /// - Parameters:
     ///   - cellIdentifier: The identifier of the cell to use as a placeholder
     ///   - key: the unique key of the placeholder
-    public init(cellIdentifier: String, key: PlaceholderKey) {
+    ///   - data: data for xib
+    public init(cellIdentifier: String, key: PlaceholderKey, data: PlaceholderData) {
         self.key = key
         self.cellIdentifier = cellIdentifier
+        self.data = data
     }
 }
