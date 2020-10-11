@@ -47,8 +47,8 @@ public struct PlaceholderKey: Hashable {
         return PlaceholderKey(value: key)
     }
     
-    public var hashValue: Int {
-        return value.hashValue
+    public func hash(into hasher: inout Hasher) {
+        return hasher.combine(value.hashValue)
     }
 }
 
