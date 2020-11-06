@@ -1,39 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomPlaceholderCell" id="KGk-i7-Jjw" customClass="ExampleTableViewCell" customModule="HGPlaceholders_Example" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomPlaceholderCell" rowHeight="342" id="VE2-QZ-5xv" customClass="ExampleTableViewCell" customModule="HGPlaceholders_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="342"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VE2-QZ-5xv" id="Rr4-fe-bUR">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="342"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpt-4x-Zox">
-                        <rect key="frame" x="136" y="7" width="48" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3H-1u-1XA">
+                        <rect key="frame" x="136" y="237" width="48" height="30"/>
                         <state key="normal" title="Action!">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                         <connections>
-                            <action selector="sendPlaceholderAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hgQ-Ct-rjF"/>
+                            <action selector="sendPlaceholderAction:" destination="VE2-QZ-5xv" eventType="touchUpInside" id="q3C-T6-afw"/>
                         </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO8-nY-hY3">
+                        <rect key="frame" x="20" y="150" width="280" height="32.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TiD-CB-OLT">
+                        <rect key="frame" x="110" y="20" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Yhv-KW-b0s"/>
+                            <constraint firstAttribute="width" secondItem="TiD-CB-OLT" secondAttribute="height" multiplier="1:1" id="q8v-eI-tvn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhK-2u-lLT">
+                        <rect key="frame" x="20" y="192.5" width="280" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" red="0.1897330284" green="0.38077324629999998" blue="0.87199062110000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="Gpt-4x-Zox" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Zq9-TI-yDI"/>
-                    <constraint firstItem="Gpt-4x-Zox" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gm8-7q-V6k"/>
+                    <constraint firstItem="PhK-2u-lLT" firstAttribute="leading" secondItem="VO8-nY-hY3" secondAttribute="leading" id="2Qv-4W-ikV"/>
+                    <constraint firstItem="VO8-nY-hY3" firstAttribute="leading" secondItem="Rr4-fe-bUR" secondAttribute="leading" constant="20" id="A4f-mW-Ddn"/>
+                    <constraint firstItem="U3H-1u-1XA" firstAttribute="top" secondItem="PhK-2u-lLT" secondAttribute="bottom" constant="30" id="GGa-KY-CEy"/>
+                    <constraint firstItem="VO8-nY-hY3" firstAttribute="top" secondItem="Rr4-fe-bUR" secondAttribute="top" constant="150" id="UwB-ru-xhK"/>
+                    <constraint firstItem="U3H-1u-1XA" firstAttribute="centerX" secondItem="VO8-nY-hY3" secondAttribute="centerX" id="XYA-FK-oja"/>
+                    <constraint firstItem="PhK-2u-lLT" firstAttribute="trailing" secondItem="VO8-nY-hY3" secondAttribute="trailing" id="cWK-Iv-GD1"/>
+                    <constraint firstAttribute="trailing" secondItem="VO8-nY-hY3" secondAttribute="trailing" constant="20" id="pLh-mw-zms"/>
+                    <constraint firstItem="PhK-2u-lLT" firstAttribute="top" secondItem="VO8-nY-hY3" secondAttribute="bottom" constant="10" id="rHe-v1-VgE"/>
+                    <constraint firstItem="TiD-CB-OLT" firstAttribute="centerX" secondItem="Rr4-fe-bUR" secondAttribute="centerX" id="u3r-9M-HqC"/>
+                    <constraint firstItem="TiD-CB-OLT" firstAttribute="top" secondItem="Rr4-fe-bUR" secondAttribute="top" constant="20" id="yRq-uB-Ze5"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-121" y="51"/>
+            <connections>
+                <outlet property="actionButton" destination="U3H-1u-1XA" id="SkY-xw-64A"/>
+                <outlet property="placeholderImageView" destination="TiD-CB-OLT" id="xhO-ZO-PqT"/>
+                <outlet property="subtitleLabel" destination="PhK-2u-lLT" id="by2-ol-kxY"/>
+                <outlet property="titleLabel" destination="VO8-nY-hY3" id="8s2-pc-ITa"/>
+            </connections>
+            <point key="canvasLocation" x="-121.59999999999999" y="184.40779610194903"/>
         </tableViewCell>
     </objects>
 </document>
