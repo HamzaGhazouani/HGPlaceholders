@@ -151,7 +151,8 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
         if style?.shouldShowTableViewFooter != true {
             tableViewHeight -= tableView.tableFooterView?.bounds.height ?? 0
         }
-        
+        // Make sure tableViewHeight isn't less then 0.0 to prevent crash
+        tableViewHeight = tableViewHeight >= 0.0 ? tableViewHeight : 0
         return tableViewHeight
     }
     
