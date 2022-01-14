@@ -14,8 +14,8 @@ public struct PlaceholderStyle {
     
     // MARK: properties
     
-    /// The color of the placeholder title, the default value is darkText
-    public var titleColor: UIColor = .darkText
+    /// The color of the placeholder title, the default value is darkText or label (in iOS 13 and above)
+    public var titleColor: UIColor = HGColor.darkText
     /// The font of the placeholder title, the default value is boldSystemFont 19
     public var titleFont = UIFont.boldSystemFont(ofSize: 19)
     /// The text alignment of the placeholder title, the default value is  NSTextAlignment.center
